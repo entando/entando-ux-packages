@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context path="/admin-console-webapp" docBase="./admin-console-webapp" debug="1" reloadable="true">
+	
+	<Environment name="logName" value="admin-console-webapp" type="java.lang.String" override="false" />
+	<Environment name="logFilePrefix" value="/home/eu/ENTANDO/github/entando-ux-packages/admin-console-webapp/target/log_admin-console-webapp" type="java.lang.String" override="false" />
+	<Environment name="logLevel" value="INFO" type="java.lang.String" override="false" />
+	<Environment name="logFileSize" value="200000" type="java.lang.String" override="false" />
+	<Environment name="logFilesCount" value="10" type="java.lang.String" override="false" />
+	
+	<Environment name="configVersion" value="production" type="java.lang.String" override="false" />
+	
+	<Environment name="applicationBaseURL" value="http://localhost:8080/admin-console-webapp/" type="java.lang.String" override="false" />
+	<Environment name="resourceRootURL" value="/admin-console-webapp/resources/" type="java.lang.String" override="false" />
+	<Environment name="protectedResourceRootURL" value="/admin-console-webapp/protected/" type="java.lang.String" override="false" />
+	
+	<Environment name="resourceDiskRootFolder" value="/home/eu/ENTANDO/github/entando-ux-packages/admin-console-webapp/src/main/webapp/resources" type="java.lang.String" override="false" />
+	<Environment name="protectedResourceDiskRootFolder" value="/home/eu/ENTANDO/github/entando-ux-packages/admin-console-webapp/src/main/webapp/protected" type="java.lang.String" override="false" />
+	
+	<Environment name="indexDiskRootFolder" value="/home/eu/ENTANDO/github/entando-ux-packages/admin-console-webapp/target/temp/indexdir" type="java.lang.String" override="false" />
+	
+	<Resource name="jdbc/portDataSource" auth="Container" 
+		type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
+		maxActive="8" maxIdle="4" 
+		username="agile" password="agile" 
+		url="jdbc:derby:/home/eu/ENTANDO/github/entando-ux-packages/admin-console-webapp/target/derby/production/admin-console-webappPort;create=true" />
+	
+	<Resource name="jdbc/servDataSource" auth="Container" 
+		type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
+		maxActive="8" maxIdle="4" 
+		username="agile" password="agile" 
+		url="jdbc:derby:/home/eu/ENTANDO/github/entando-ux-packages/admin-console-webapp/target/derby/production/admin-console-webappServ;create=true" />
+	
+</Context>
