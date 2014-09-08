@@ -6,8 +6,7 @@
 	<artifactId>admin-console-webapp</artifactId>
 	<packaging>war</packaging>
 	<version>4.1.2-SNAPSHOT</version>
-	<name>admin-console-webapp</name>
-	<!-- <name>engine-webapp</name> -->
+	<name>Entando: Administration Console Webapp</name>
 	<url>http://maven.apache.org/</url>
 	<profiles>
 		<profile>
@@ -657,6 +656,7 @@
 			<groupId>org.entando.entando</groupId>
 			<artifactId>entando-engine</artifactId>
 			<version>${entando.version}</version>
+			<type>jar</type>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -671,7 +671,14 @@
 			<groupId>org.entando.entando</groupId>
 			<artifactId>entando-admin-console</artifactId>
 			<version>${entando.version}</version>
+			<type>jar</type>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.entando.entando</groupId>
+			<artifactId>entando-admin-console</artifactId>
+			<version>${entando.version}</version>
+			<type>war</type>
 		</dependency>
 		<dependency>
 			<groupId>org.entando.entando</groupId>
@@ -679,12 +686,6 @@
 			<version>${entando.version}</version>
 			<type>test-jar</type>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.entando.entando</groupId>
-			<artifactId>entando-admin-console</artifactId>
-			<version>${entando.version}</version>
-			<type>war</type>
 		</dependency>
 		
 		
@@ -731,15 +732,5 @@
 			<version>4.8.2</version>
 			<scope>test</scope>
 		</dependency>
-	 <dependency>
-	  <groupId>org.glassfish.jersey.containers</groupId>
-	  <artifactId>jersey-container-servlet</artifactId>
-	  <version>2.0</version>
-	 </dependency>
-	 <dependency>
-	  <groupId>org.glassfish.jersey.core</groupId>
-	  <artifactId>jersey-client</artifactId>
-	  <version>2.0</version>
-	 </dependency>
 	</dependencies>
 </project>
