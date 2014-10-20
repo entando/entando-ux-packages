@@ -1,0 +1,7 @@
+<project name="portalexample" default="WAR-build" basedir=".">
+	<description>portalexample - Build file</description>
+
+	<import file="buildProperties.xml"/>
+	<import file="buildTasks.xml"/>
+
+</project>

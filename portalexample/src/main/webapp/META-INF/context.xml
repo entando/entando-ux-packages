@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context path="/portalexample" docBase="./portalexample" debug="1" reloadable="true">
+	
+	<Environment name="logName" value="portalexample" type="java.lang.String" override="false" />
+	<Environment name="logFilePrefix" value="/home/eu/tomcat6-test/logs/portalexample_log" type="java.lang.String" override="false" />
+	<Environment name="logLevel" value="WARN" type="java.lang.String" override="false" />
+	<Environment name="logFileSize" value="200000" type="java.lang.String" override="false" />
+	<Environment name="logFilesCount" value="10" type="java.lang.String" override="false" />
+	
+	<Environment name="configVersion" value="production" type="java.lang.String" override="false" />
+	
+	<Environment name="applicationBaseURL" value="http://localhost:8080/portalexample/" type="java.lang.String" override="false" />
+	<Environment name="resourceRootURL" value="/portalexample/resources/" type="java.lang.String" override="false" />
+	<Environment name="protectedResourceRootURL" value="/portalexample/protected/" type="java.lang.String" override="false" />
+	
+	<Environment name="resourceDiskRootFolder" value="/home/eu/tomcat6-test/webapps/portalexample/resources" type="java.lang.String" override="false" />
+	<Environment name="protectedResourceDiskRootFolder" value="/home/eu/tomcat6-test/webapps/portalexample/protected" type="java.lang.String" override="false" />
+	
+	<Environment name="indexDiskRootFolder" value="/home/eu/tomcat6-test/webapps/portalexample/indexdir" type="java.lang.String" override="false" />
+	
+	<Resource name="jdbc/portDataSource" auth="Container" 
+		type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
+		maxActive="8" maxIdle="4" 
+		username="agile" password="agile" 
+		url="jdbc:derby:/home/eu/tomcat6-test/webapps/portalexample/derby/production/portalexamplePort;create=true" />
+	
+	<Resource name="jdbc/servDataSource" auth="Container" 
+		type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
+		maxActive="8" maxIdle="4" 
+		username="agile" password="agile" 
+		url="jdbc:derby:/home/eu/tomcat6-test/webapps/portalexample/derby/production/portalexampleServ;create=true" />
+	
+</Context>
