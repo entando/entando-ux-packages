@@ -12,8 +12,7 @@
 					<table name="authroles" />
 					<table name="authrolepermissions" />
 					<table name="authusers" />
-					<table name="authusergroups" />
-					<table name="authuserroles" />
+					<table name="authusergrouprole" />
 					<table name="api_oauth_consumers" />
 					<table name="api_oauth_tokens" />
 					<table name="apicatalog_methods" />
@@ -304,11 +303,10 @@
 		<table name="authpermissions" requiredTime="3" rows="8" />
 		<table name="authrolepermissions" requiredTime="4" rows="1" />
 		<table name="authroles" requiredTime="2" rows="1" />
-		<table name="authusergroups" requiredTime="3" rows="1" />
 		<table name="authuserprofileattrroles" requiredTime="25" rows="2" />
 		<table name="authuserprofiles" requiredTime="3" rows="1" />
 		<table name="authuserprofilesearch" requiredTime="36" rows="0" />
-		<table name="authuserroles" requiredTime="2" rows="1" />
+		<table name="authusergrouprole" requiredTime="2" rows="1" />
 		<table name="authusers" requiredTime="3" rows="1" />
 		<table name="authusershortcuts" requiredTime="3" rows="1" />
 		<table name="portalexample_cards" requiredTime="6" rows="4" />
