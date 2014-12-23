@@ -151,19 +151,10 @@ public class CardManager extends AbstractService implements ICardManager {
             throw new ApsSystemException("Error deleting card by id " + id, t);
         }
     }
-
-    /**
-     * Restituisce il dao delle schede.
-     * @return Il dao delle schede.
-     */
+	
     protected ICardDAO getCardDAO() {
         return _cardDAO;
     }
-
-    /**
-     * Imposta il dao delle schede.
-     * @param cardDAO Il dao delle schede.
-     */
     public void setCardDAO(ICardDAO cardDAO) {
         this._cardDAO = cardDAO;
     }

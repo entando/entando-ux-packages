@@ -103,99 +103,44 @@ public class CardAction extends BaseAction {
 		return card;
 	}
 	
-	/**
-	 * Identifica l'operazione corrente. Può valere {@link ApsAdminSystemConstants#ADD} nel caso di nuova scheda 
-	 * o {@link ApsAdminSystemConstants.EDIT} nel caso di modifica di una scheda pre-esistente.
-	 * @return L'operazione corrente.
-	 */
 	public int getStrutsAction() {
 		return _strutsAction;
 	}
-	
-	/**
-	 * Imposta l'operazione corrente.
-	 * @param strutsAction L'operazione corrente.
-	 */
 	public void setStrutsAction(int strutsAction) {
 		this._strutsAction = strutsAction;
 	}
 	
-	/**
-	 * Restituisce l'identificativo della scheda.
-	 * @return L'identificativo della scheda.
-	 */
 	public int getId() {
 		return _id;
 	}
-	
-	/**
-	 * Imposta l'identificativo della scheda.
-	 * @param id L'identificativo della scheda.
-	 */
 	public void setId(int id) {
 		this._id = id;
 	}
 	
-	/**
-	 * Restituisce il titolare della scheda.
-	 * @return Il titolare della scheda.
-	 */
 	public String getHolder() {
 		return _holder;
 	}
-	
-	/**
-	 * Imposta il titolare della scheda.
-	 * @param holder Il titolare della scheda.
-	 */
 	public void setHolder(String holder) {
 		this._holder = holder;
 	}
 	
-	/**
-	 * Restituisce la descrizione della scheda.
-	 * @return La descrizione della scheda.
-	 */
 	public String getDescr() {
 		return _descr;
 	}
-	
-	/**
-	 * Imposta la descrizione della scheda.
-	 * @param descr La descrizione della scheda.
-	 */
 	public void setDescr(String descr) {
 		this._descr = descr;
 	}
 	
-	/**
-	 * Restituisce la data di rilascio della scheda.
-	 * @return La data di rilascio della scheda.
-	 */
 	public Date getDate() {
 		return _date;
 	}
-	
-	/**
-	 * Imposta la data di rilascio della scheda.
-	 * @param date La data di rilascio della scheda.
-	 */
 	public void setDate(Date date) {
 		this._date = date;
 	}
 	
-	/**
-	 * Restituisce le note della scheda.
-	 * @return Le note della scheda.
-	 */
 	public String getNote() {
 		return _note;
 	}
-	
-	/**
-	 * Imposta le note della scheda.
-	 * @param note Le note della scheda.
-	 */
 	public void setNote(String note) {
 		this._note = note;
 	}
