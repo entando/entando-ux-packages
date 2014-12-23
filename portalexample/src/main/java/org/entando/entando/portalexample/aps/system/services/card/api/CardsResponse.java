@@ -31,6 +31,10 @@ public class CardsResponse extends AbstractApiResponse {
         return (CardsResponseResult) super.getResult();
     }
     
+	public void setResult(CardsResponseResult result) {
+		super.setResult(result);
+	}
+	
 	@Override
     protected AbstractApiResponseResult createResponseResultInstance() {
         return new CardsResponseResult();
