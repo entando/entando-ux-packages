@@ -1,20 +1,16 @@
 /*
-*
-* Copyright 2013 Entando S.r.l. (http://www.entando.com) All rights reserved.
-*
-* This file is part of Entando software.
-* Entando is a free software; 
-* you can redistribute it and/or modify it
-* under the terms of the GNU General Public License (GPL) as published by the Free Software Foundation; version 2.
-* 
-* See the file License for the specific language governing permissions   
-* and limitations under the License
-* 
-* 
-* 
-* Copyright 2013 Entando S.r.l. (http://www.entando.com) All rights reserved.
-*
-*/
+ * Copyright 2013-Present Entando Corporation (http://www.entando.com) All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ */
 package org.entando.entando.portalexample.aps.system.services.card;
 
 import java.util.Date;
@@ -24,7 +20,6 @@ import javax.sql.DataSource;
 import org.entando.entando.portalexample.aps.PortalexampleBaseTestCase;
 
 /**
- * Classe di test per il DAO delle schede.
  * @author E.Mezzano
  */
 public class TestCardDAO extends PortalexampleBaseTestCase {
@@ -35,17 +30,11 @@ public class TestCardDAO extends PortalexampleBaseTestCase {
 		this.init();
 	}
 	
-	/**
-	 * Esegue il test sul corretto funzionamento del metodo 'loadCards'.
-	 */
 	public void testLoadCards() {
 		List<Card> cards = this._cardDAO.loadCards();
 		assertEquals(4, cards.size());
 	}
 	
-	/**
-	 * Esegue il test sul corretto funzionamento del metodo 'searchCards'.
-	 */
 	public void testSearchCards() {
 		List<Card> cards = this._cardDAO.searchCards("anch");
 		assertEquals(1, cards.size());
@@ -54,9 +43,6 @@ public class TestCardDAO extends PortalexampleBaseTestCase {
 		assertTrue(titolare.equals("Bianchi Marco"));
 	}
 	
-	/**
-	 * Esegue il test sul corretto funzionamento del metodo 'loadCard'.
-	 */
 	public void testLoadCard() {
 		Card card = this._cardDAO.loadCard(1);
 		assertEquals("Bianchi Marco", card.getHolder());
@@ -66,9 +52,6 @@ public class TestCardDAO extends PortalexampleBaseTestCase {
 		assertEquals("Verdi Nicola", card.getHolder());
 	}
 	
-	/**
-	 * Esegue il test sul corretto funzionamento dei metodi 'addCard' e 'deleteCard' per l'aggiunta e la cancellazione di una scheda.
-	 */
 	public void testAddDeleteCard() throws Exception {
 		assertNull(this._cardDAO.loadCard(20));
 		Card newCard = new Card();
@@ -91,9 +74,6 @@ public class TestCardDAO extends PortalexampleBaseTestCase {
 		assertNull(this._cardDAO.loadCard(20));
 	}
 	
-	/**
-	 * Esegue il test sul corretto funzionamento del metodo 'updateCard'.
-	 */
 	public void testUpdateCard() {
 		Card card = this._cardDAO.loadCard(2);
 		String oldTitolare = card.getHolder();
@@ -125,9 +105,6 @@ public class TestCardDAO extends PortalexampleBaseTestCase {
 		assertNull(updatedCard.getNote());
 	}
 	
-	/**
-	 * Esegue le operazioni di inizializzazione della classe di test. Crea il dao da testare impostandone il datasource.
-	 */
 	private void init() {
 		DataSource dataSource = (DataSource) this.getApplicationContext().getBean("servDataSource");
 		CardDAO cardDAO = new CardDAO();

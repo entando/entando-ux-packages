@@ -1,6 +1,6 @@
 <%@ taglib prefix="wp" uri="/aps-core" %>
 
-	<link rel="stylesheet" type="text/css" href="<wp:resourceURL />static/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="<wp:resourceURL />static/bootstrap/css/bootstrap-responsive.min.css" />
-
-	<link rel="stylesheet" type="text/css" href="<wp:resourceURL />static/css/portalexample.css" />
+	<link rel="stylesheet/less" href="<wp:resourceURL />static/entando-misc-bootstrap/bootstrap/less/bootstrap.less" />
+	<link rel="stylesheet/less" href="<wp:resourceURL />static/entando-misc-bootstrap/bootstrap/less/responsive.less" />
+	<link rel="stylesheet/less" href="<wp:resourceURL />static/less/portalexample.less" />
+	<script src="<wp:resourceURL />static/js/entando-misc-less/less-1.3.1.min.js"></script>
