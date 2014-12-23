@@ -13,6 +13,10 @@
  */
 package org.entando.entando.portalexample.aps.system.services.card;
 
+import com.agiletec.aps.system.common.AbstractService;
+import com.agiletec.aps.system.exception.ApsSystemException;
+import com.agiletec.aps.system.services.keygenerator.IKeyGeneratorManager;
+
 import java.util.List;
 import java.util.Properties;
 
@@ -20,20 +24,19 @@ import javax.ws.rs.core.Response;
 
 import org.entando.entando.aps.system.services.api.IApiErrorCodes;
 import org.entando.entando.aps.system.services.api.model.ApiException;
-
-import com.agiletec.aps.system.ApsSystemUtils;
-import com.agiletec.aps.system.common.AbstractService;
-import com.agiletec.aps.system.exception.ApsSystemException;
-import com.agiletec.aps.system.services.keygenerator.IKeyGeneratorManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author E.Mezzano - E.Santoboni
  */
 public class CardManager extends AbstractService implements ICardManager {
-
+	
+	private static final Logger _logger =  LoggerFactory.getLogger(CardManager.class);
+	
 	@Override
     public void init() throws Exception {
-        ApsSystemUtils.getLogger().debug(this.getClass().getName() + ": initialized ");
+        _logger.debug("{} ready.", this.getClass().getName());
     }
 
     public List<Card> getCardsForApi(Properties properties) throws Throwable {
@@ -62,7 +65,7 @@ public class CardManager extends AbstractService implements ICardManager {
         try {
             cards = this.getCardDAO().loadCards();
         } catch (Throwable t) {
-            ApsSystemUtils.logThrowable(t, this, "getCards");
+			_logger.error("Error loading cards",  t);
             throw new ApsSystemException("Error loading cards", t);
         }
         return cards;
@@ -74,7 +77,7 @@ public class CardManager extends AbstractService implements ICardManager {
         try {
             cards = this.getCardDAO().searchCards(holder);
         } catch (Throwable t) {
-            ApsSystemUtils.logThrowable(t, this, "searchCards");
+            _logger.error("Error searching cards",  t);
             throw new ApsSystemException("Error searching cards", t);
         }
         return cards;
@@ -86,7 +89,7 @@ public class CardManager extends AbstractService implements ICardManager {
         try {
             card = this.getCardDAO().loadCard(id);
         } catch (Throwable t) {
-            ApsSystemUtils.logThrowable(t, this, "getCard");
+            _logger.error("Error searching card by id {}", id,  t);
             throw new ApsSystemException("Error searching card by id " + id, t);
         }
         return card;
@@ -106,7 +109,7 @@ public class CardManager extends AbstractService implements ICardManager {
         	card.setId(key);
             this.getCardDAO().addCard(card);
         } catch (Throwable t) {
-            ApsSystemUtils.logThrowable(t, this, "addCard");
+            _logger.error("Error adding card",  t);
             throw new ApsSystemException("Error adding card", t);
         }
     }
@@ -123,7 +126,7 @@ public class CardManager extends AbstractService implements ICardManager {
         try {
             this.getCardDAO().updateCard(card);
         } catch (Throwable t) {
-            ApsSystemUtils.logThrowable(t, this, "updateCard");
+            _logger.error("Error updating card",  t);
             throw new ApsSystemException("Error updating card", t);
         }
     }
@@ -144,7 +147,7 @@ public class CardManager extends AbstractService implements ICardManager {
         try {
             this.getCardDAO().deleteCard(id);
         } catch (Throwable t) {
-            ApsSystemUtils.logThrowable(t, this, "deleteCard");
+            _logger.error("Error deleting card by id {}", id,  t);
             throw new ApsSystemException("Error deleting card by id " + id, t);
         }
     }

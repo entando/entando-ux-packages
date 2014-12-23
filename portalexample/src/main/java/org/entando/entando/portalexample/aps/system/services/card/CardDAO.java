@@ -23,10 +23,15 @@ import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * @author E.Santoboni
  */
 public class CardDAO extends AbstractSearcherDAO implements ICardDAO {
+	
+	private static final Logger _logger =  LoggerFactory.getLogger(CardDAO.class);
 	
 	@Override
 	public List<Card> loadCards() {
@@ -72,7 +77,8 @@ public class CardDAO extends AbstractSearcherDAO implements ICardDAO {
 				card.setNote(res.getString(5));
 			}
 		} catch (Throwable t) {
-			processDaoException(t, "Error loading card by id " + id, "loadCard");
+			_logger.error("Error loading card by id {}", id,  t);
+			throw new RuntimeException("Error loading card by id " + id, t);
 		} finally {
 			closeDaoResources(res, stat, conn);
 		}
@@ -101,7 +107,8 @@ public class CardDAO extends AbstractSearcherDAO implements ICardDAO {
 			conn.commit();
 		} catch (Throwable t) {
 			this.executeRollback(conn);
-			processDaoException(t, "Error adding new card", "addCard");
+			_logger.error("Error adding new card",  t);
+			throw new RuntimeException("Error adding new card", t);
 		} finally {
 			closeDaoResources(null, stat, conn);
 		}
@@ -129,7 +136,8 @@ public class CardDAO extends AbstractSearcherDAO implements ICardDAO {
 			conn.commit();
 		} catch (Throwable t) {
 			this.executeRollback(conn);
-			processDaoException(t, "Error updating a card", "updateCard");
+			_logger.error("Error updating a card",  t);
+			throw new RuntimeException("Error updating a card", t);
 		} finally {
 			closeDaoResources(null, stat, conn);
 		}
@@ -148,7 +156,8 @@ public class CardDAO extends AbstractSearcherDAO implements ICardDAO {
 			conn.commit();
 		} catch (Throwable t) {
 			this.executeRollback(conn);
-			processDaoException(t, "Error deleting card", "deleteCard");
+			_logger.error("Error deleting a card",  t);
+			throw new RuntimeException("Error deleting a card", t);
 		} finally {
 			closeDaoResources(null, stat, conn);
 		}
@@ -175,10 +184,10 @@ public class CardDAO extends AbstractSearcherDAO implements ICardDAO {
 	}
 	
 	private static final String SELECT = 
-			"SELECT id, holder, description, date, note FROM portalexample_cards  WHERE id = ?";
+			"SELECT id, holder, description, date, note FROM portalexample_cards WHERE id = ?";
 	
 	private static final String INSERT = 
-			"INSERT INTO portalexample_cards(id, holder, description, date, note) VALUES (?, ?, ?, ?, ?)";
+			"INSERT INTO portalexample_cards (id, holder, description, date, note) VALUES (?, ?, ?, ?, ?)";
 	
 	private static final String UPDATE = 
 			"UPDATE portalexample_cards SET holder = ? , description = ? , date = ? , note = ? WHERE id = ?";
