@@ -8,6 +8,24 @@
 	<version>4.1.2-SNAPSHOT</version>
 	<name>Entando: Administration Console Webapp</name>
 	<url>http://maven.apache.org/</url>
+	<licenses>
+		<license>
+			<name>GNU LESSER GENERAL PUBLIC LICENSE,  Version 2.1, February 1999</name>
+			<url>https://www.gnu.org/licenses/lgpl-2.1.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>e.santoboni</id>
+			<name>Eugenio Santoboni</name>
+			<email>e.santoboni@entando.com</email>
+		</developer>
+	</developers>
+	<organization>
+		<name>Entando Corporation</name>
+		<url>http://www.entando.com/</url>
+	</organization>
 	<profiles>
 		<profile>
 			<id>production</id>
