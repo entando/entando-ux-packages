@@ -118,7 +118,7 @@
 		<test.database.password>agile</test.database.password>
 		<test.database.port.url>jdbc:derby:${project.build.directory}/test/db/${project.artifactId}testPort;create=true</test.database.port.url>
 		<test.database.serv.url>jdbc:derby:${project.build.directory}/test/db/${project.artifactId}testServ;create=true</test.database.serv.url>
-		
+
 		<skipDerby>true</skipDerby>
 		<skipStandalone>true</skipStandalone>
 		<entando.version>4.1.2-SNAPSHOT</entando.version>
@@ -212,10 +212,6 @@
 								<artifactItem>
 									<groupId>org.entando.entando</groupId>
 									<artifactId>entando-admin-console</artifactId>
-									<!--
-									<groupId>org.entando.entando</groupId>
-									<artifactId>entando-portal-ui</artifactId>
-									-->
 									<type>war</type>
 									<outputDirectory>src/main/webapp</outputDirectory>
 									<overWrite>false</overWrite>
@@ -224,7 +220,6 @@
 							<includes>WEB-INF/aps/jsp/internalservlet/api/**/*.jsp</includes>
 						</configuration>
 					</execution>
-					<!--
 					<execution>
 						<id>unpack-dependencies-bootstrap</id>
 						<phase>prepare-package</phase>
@@ -248,7 +243,6 @@
 							<includes>resources/static/entando-misc-bootstrap/bootstrap/bootstrap/**</includes>
 						</configuration>
 					</execution>
-					-->
 				</executions>
 			</plugin>
 			<plugin>
@@ -449,6 +443,24 @@
 				</dependencies>
 			</plugin>
 			<plugin>
+				<groupId>org.zeroturnaround</groupId>
+				<artifactId>jrebel-maven-plugin</artifactId>
+				<version>1.1.3</version>
+				<configuration>
+					<name>${project.artifactId}</name>
+					<version>${project.version}-${maven.build.timestamp}</version>
+				</configuration>
+				<executions>
+					<execution>
+						<id>generate-liverebel-xml</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>generate-liverebel-xml</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.12</version>
@@ -483,6 +495,7 @@
 						<artifactId>postgresql</artifactId>
 						<version>9.1-901.jdbc4</version>
 					</dependency>
+					<!-- uncomment if you need -->
 					<!--
 					<dependency>
 						<groupId>mysql</groupId>
@@ -548,17 +561,9 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.2</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.codehaus.plexus</groupId>
-						<artifactId>plexus-archiver</artifactId>
-						<version>2.4.1</version>
-					</dependency>
-				</dependencies>
+				<version>2.6</version>
 				<configuration>
 					<packagingExcludes>WEB-INF/classes/**/*.tld<!--,resources/static/entando-misc-bootstrap/**--></packagingExcludes>
-					<!--
 					<webResources>
 						<resource>
 							<directory>${project.build.directory}/entando-misc-bootstrap/resources/static/entando-misc-bootstrap/bootstrap</directory>
@@ -568,7 +573,6 @@
 							</includes>
 						</resource>
 					</webResources>
-					-->
 				</configuration>
 			</plugin>
 			<plugin>
@@ -835,5 +839,5 @@
 			<version>4.8.2</version>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>	
+	</dependencies>
 </project>
