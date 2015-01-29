@@ -5,11 +5,6 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'user
 			<attribute name="fullname" attributetype="Monotext" description="Full Name" searchable="true">
 				<validations>
 					<required>true</required>
-					<expression evalOnValuedAttribute="true">
-						<ognlexpression><![CDATA[(#attribute.getText().length() > 8)]]></ognlexpression>
-						<errormessage><![CDATA[salvarì]]></errormessage>
-						<helpmessage><![CDATA[Messaggio d''aiuto]]></helpmessage>
-					</expression>
 				</validations>
 				<roles>
 					<role>userprofile:fullname</role>
