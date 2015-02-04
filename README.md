@@ -5,7 +5,7 @@
 The **entando-ux-packages** project includes the following modules:
 
 * **admin-console-webapp**, sample of an Entando application based on engine and admin-console core components 
-(see [entando-core project](https://github.com/entando/entando-core)), 
+(see [entando-core](https://github.com/entando/entando-core)), 
 useful to develop and test plugins components (see [entando-components] (https://github.com/entando/entando-components)) 
 and other vertical applications extending engine and admin console features.
 
