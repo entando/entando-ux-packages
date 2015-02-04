@@ -1,6 +1,6 @@
 # entando-ux-packages
 
-```entando-ux-packages``` is a project providing samples of Entando based applications.
+```entando-ux-packages``` is an other fundamental part of the Entando platform project. It provides samples of Entando based applications.
 
 The **entando-ux-packages** project includes the following modules:
 
