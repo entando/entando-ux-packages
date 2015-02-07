@@ -154,12 +154,12 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 			<script src="<@wp.resourceURL />static/js/entando-misc-html5-essentials/html5shiv.js"></script>
 		<![endif]-->
 		<@wp.fragment code="models-lesscss-active" escapeXml=false />
-                <@wp.fragment code="models-common-utils" escapeXml=false />
+        <@wp.fragment code="models-common-utils" escapeXml=false />
 
 	</head>
 
 <body>
-	<div class="navbar navbar-fixed-top">
+	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
 				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -276,33 +276,33 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 					</div>
 				</div>
 			</div>
+		</div>
 	</div> <!-- /container -->
 
-		<footer class="padding-medium-top">
-
-			<div class="container">
-				<div class="row margin-medium-bottom">
-					<div class="span12">
-						<@wp.show frame=28 />
-						<@wp.show frame=29 />
-					</div>
-				</div>
-				<div class="row margin-medium-bottom">
-					<div class="span4">
-						<@wp.show frame=30 />
-					</div>
-					<div class="span4">
-						<@wp.show frame=31 />
-					</div>
-					<div class="span4">
-						<@wp.show frame=32 />
-					</div>
-				</div>
-				<div class="row">
-					<p class="span12 text-center margin-medium-top"><@wp.i18n key="COPYRIGHT" escapeXml=false /> - Powered by <a href="http://www.entando.com/">Entando - Simplifying Enterprise Portals</a></p>
+	<footer class="padding-medium-top">
+		<div class="container">
+			<div class="row margin-medium-bottom">
+				<div class="span12">
+					<@wp.show frame=28 />
+					<@wp.show frame=29 />
 				</div>
 			</div>
-		</footer>
+			<div class="row margin-medium-bottom">
+				<div class="span4">
+					<@wp.show frame=30 />
+				</div>
+				<div class="span4">
+					<@wp.show frame=31 />
+				</div>
+				<div class="span4">
+					<@wp.show frame=32 />
+				</div>
+			</div>
+			<div class="row">
+				<p class="span12 text-center margin-medium-top"><@wp.i18n key="COPYRIGHT" escapeXml=false /> - Powered by <a href="http://www.entando.com/">Entando - Simplifying Enterprise Portals</a></p>
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>');
@@ -427,12 +427,8 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 		<![endif]-->
 
 		<@wp.fragment code="models-lesscss-active" escapeXml=false />
-                <@wp.fragment code="models-common-utils" escapeXml=false />
-<#--
-                <jsp:include page="inc/lesscss-active/lesscss.jsp" />
-		<jsp:include page="inc/models-common-utils.jsp" />
--->
-                
+        <@wp.fragment code="models-common-utils" escapeXml=false />
+		
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans|Rambla|Calligraffitti" rel="stylesheet" type="text/css" />
 
 	</head>
