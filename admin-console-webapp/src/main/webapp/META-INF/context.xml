@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Context path="/admin-console-webapp" docBase="./admin-console-webapp" debug="1" reloadable="true">
+<Context path="/admin-console-webapp" docBase="./admin-console-webapp" debug="1" reloadable="false">
 	
 	<Environment name="logName" value="admin-console-webapp" type="java.lang.String" override="false" />
 	<Environment name="logFilePrefix" value="/home/eu/ENTANDO/github_eugeniosant/entando-ux-packages/admin-console-webapp/target/log_admin-console-webapp" type="java.lang.String" override="false" />
