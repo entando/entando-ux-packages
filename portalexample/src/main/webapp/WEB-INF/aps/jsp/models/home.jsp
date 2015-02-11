@@ -40,7 +40,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#"><img src="<wp:imgURL />entando-logo.png" alt="Entando - Simplifying Enterprise Portals" /></a>
+				<a class="brand" href="#"><img src="<wp:imgURL />entando-logo.png" alt="Entando - Access. Build. Connect." /></a>
 				<div class="nav-collapse">
 					<ul class="nav">
 						<li><a href="http://www.entando.com">Home of Entando</a></li>

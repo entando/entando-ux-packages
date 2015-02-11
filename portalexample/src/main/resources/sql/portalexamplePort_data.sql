@@ -881,7 +881,7 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#"><img src="<@wp.imgURL />entando-logo.png" alt="Entando - Simplifying Enterprise Portals" /></a>
+				<a class="brand" href="#"><img src="<@wp.imgURL />entando-logo.png" alt="Entando - Access. Build. Connect." /></a>
 				<div class="nav-collapse collapse">
 					<@wp.show frame=0 />
 					<@wp.show frame=1 />
@@ -1013,7 +1013,7 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 					</div>
 				</div>
 				<div class="row">
-					<p class="span12 text-center margin-medium-top"><@wp.i18n key="COPYRIGHT" escapeXml=false /> - Powered by <a href="http://www.entando.com/">Entando - Simplifying Enterprise Portals</a></p>
+					<p class="span12 text-center margin-medium-top"><@wp.i18n key="COPYRIGHT" escapeXml=false /> - Powered by <a href="http://www.entando.com/">Entando - Access. Build. Connect.</a></p>
 				</div>
 			</div>
 		</footer>
@@ -2326,7 +2326,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 <content id="NWS39" typecode="NWS" typedescr="News"><descr>Online the Portal of Entando Town</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20130329</date></attribute><attribute name="Title" attributetype="Text"><text lang="it">Online il Portale del Comune di Entando Town</text><text lang="en">Online the Portal of Entando Town</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Online il Portale del Comune di Entando Town realizzato con la piattaforma <strong>Entando</strong>.</p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	Online the Portal of Entando Town, built with the <strong>Entando - Simplifying Enterprise Portals</strong>.</p>
+	Online the Portal of Entando Town, built with the <strong>Entando - Access. Build. Connect.</strong>.</p>
 ]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Online il Portale del Comune di Entando Town realizzato con la piattaforma <strong>Entando</strong>.</p>
 <p>
@@ -2338,7 +2338,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 <p>
 	&nbsp;</p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	Online the Portal of Entando Town, built with the <strong>Entando - Simplifying Enterprise Portals</strong>.</p>
+	Online the Portal of Entando Town, built with the <strong>Entando - Access. Build. Connect.</strong>.</p>
 <p>
 	In the institutional portal you can find all the information relating to the municipality and its activities: the offices, decisions and results.</p>
 <p>
@@ -2348,7 +2348,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 <content id="NWS39" typecode="NWS" typedescr="News"><descr>Online the Portal of Entando Town</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20130329</date></attribute><attribute name="Title" attributetype="Text"><text lang="it">Online il Portale del Comune di Entando Town</text><text lang="en">Online the Portal of Entando Town</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Online il Portale del Comune di Entando Town realizzato con la piattaforma <strong>Entando</strong>.</p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	Online the Portal of Entando Town, built with the <strong>Entando - Simplifying Enterprise Portals</strong>.</p>
+	Online the Portal of Entando Town, built with the <strong>Entando - Access. Build. Connect.</strong>.</p>
 ]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Online il Portale del Comune di Entando Town realizzato con la piattaforma <strong>Entando</strong>.</p>
 <p>
@@ -2360,7 +2360,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 <p>
 	&nbsp;</p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	Online the Portal of Entando Town, built with the <strong>Entando - Simplifying Enterprise Portals</strong>.</p>
+	Online the Portal of Entando Town, built with the <strong>Entando - Access. Build. Connect.</strong>.</p>
 <p>
 	In the institutional portal you can find all the information relating to the municipality and its activities: the offices, decisions and results.</p>
 <p>
