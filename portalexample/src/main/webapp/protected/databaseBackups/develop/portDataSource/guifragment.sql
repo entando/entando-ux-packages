@@ -8,22 +8,15 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 
 <ul class="nav">
 	<li class="dropdown">
-		<a 
-			href="#" 
-			class="dropdown-toggle" 
-			data-toggle="dropdown" 
-			title="<@wp.i18n key="ESLC_LANGUAGE" />"
-			>
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="<@wp.i18n key="ESLC_LANGUAGE" />" >
 				<span class="icon-flag icon-white"></span><span class="caret"></span>
 		</a>
 			<ul class="dropdown-menu">
 				<@wp.freemarkerTemplateParameter var="langsListVar" valueName="langsVar" removeOnEndTag=true>
 					<#list langsListVar as curLangVar>
-						<li 
-							<#if (curLangVar.code == currentLangVar)>class="active" </#if>
-						>
+						<li <#if (curLangVar.code == currentLangVar)>class="active" </#if> >
 							<a href="<@wp.url lang="${curLangVar.code}" paramRepeat=true />">
-									<@wp.i18n key="ESLC_LANG_${curLangVar.code}" />
+									<@c.out value="${curLangVar.descr}" />
 							</a>
 						</li>
 					</#list>

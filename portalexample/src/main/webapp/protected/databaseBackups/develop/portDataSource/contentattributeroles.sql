@@ -1,13 +1,13 @@
+INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG55', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG8', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG9', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG41', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG43', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG44', 'Title', 'jacms:title');
-INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG55', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG56', 'Title', 'jacms:title');
+INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG18', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG70', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG71', 'Title', 'jacms:title');
-INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG18', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG40', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG72', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('CNG46', 'Title', 'jacms:title');
@@ -16,10 +16,10 @@ INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('RSL26
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('RSL28', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('RSL32', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('RSL69', 'Title', 'jacms:title');
+INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('DLD54', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('DLD48', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('DLD50', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('DLD52', 'Title', 'jacms:title');
-INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('DLD54', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('ANN20', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('ANN22', 'Title', 'jacms:title');
 INSERT INTO contentattributeroles (contentid, attrname, rolename) VALUES ('ANN57', 'Title', 'jacms:title');

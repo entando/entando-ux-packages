@@ -203,13 +203,13 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 ]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="21" lang="en" /><text lang="it">Scarica il bando</text><text lang="en">Announcements for stationery supply</text></attribute></list></attributes><status>PUBLIC</status><version>1.0</version><lastEditor>admin</lastEditor><created>20121017110649</created><lastModified>20121017110649</lastModified></content>
 ', 'free', '1.0', 'admin');
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('RSL26', 'RSL', 'Resolution 15', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="RSL26" typecode="RSL" typedescr="Resolution"><descr>Resolution 15</descr><groups mainGroup="free" /><categories><category id="resolutions_council" /></categories><attributes><attribute name="Number" attributetype="Number"><number>15</number></attribute><attribute name="Date" attributetype="Date"><date>20130716</date></attribute><attribute name="Title" attributetype="Longtext"><text lang="it">Approvazione programma di incarichi di consulenza autonoma nel settore turistico</text><text lang="en">Approval for charge of consultant program in tourism sector for 2013.</text></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+<content id="RSL26" typecode="RSL" typedescr="Resolution"><descr>Resolution 15</descr><groups mainGroup="free" /><categories><category id="resolutions_council" /></categories><attributes><attribute name="Number" attributetype="Number"><number>15</number></attribute><attribute name="Date" attributetype="Date"><date>20130716</date></attribute><attribute name="Title" attributetype="Longtext"><text lang="it">Approvazione programma di incarichi di consulenza autonoma nel settore turistico</text><text lang="en">Approval for charge of consultant program in tourism sector for 2013</text></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Approvazione programma di&nbsp; incarichi di consulenza autonoma nel settore turistico &ndash; lavori pubblici &ndash; servizi tecnologici, per l&#39;anno 2013.</p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
 	Approval for charge of consultant program in tourism sector for 2013.</p>
 ]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="25" lang="en" /><text lang="it">Delibera del Consiglio Comunale numero 15 del 09 Luglio 2011</text><text lang="en">Resolution 15</text></attribute></list></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121018153131</created><lastModified>20130314131754</lastModified></content>
 ', '20121018153131', '20130314131754', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="RSL26" typecode="RSL" typedescr="Resolution"><descr>Resolution 15</descr><groups mainGroup="free" /><categories><category id="resolutions_council" /></categories><attributes><attribute name="Number" attributetype="Number"><number>15</number></attribute><attribute name="Date" attributetype="Date"><date>20130716</date></attribute><attribute name="Title" attributetype="Longtext"><text lang="it">Approvazione programma di incarichi di consulenza autonoma nel settore turistico</text><text lang="en">Approval for charge of consultant program in tourism sector for 2013.</text></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+<content id="RSL26" typecode="RSL" typedescr="Resolution"><descr>Resolution 15</descr><groups mainGroup="free" /><categories><category id="resolutions_council" /></categories><attributes><attribute name="Number" attributetype="Number"><number>15</number></attribute><attribute name="Date" attributetype="Date"><date>20130716</date></attribute><attribute name="Title" attributetype="Longtext"><text lang="it">Approvazione programma di incarichi di consulenza autonoma nel settore turistico</text><text lang="en">Approval for charge of consultant program in tourism sector for 2013</text></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Approvazione programma di&nbsp; incarichi di consulenza autonoma nel settore turistico &ndash; lavori pubblici &ndash; servizi tecnologici, per l&#39;anno 2013.</p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
 	Approval for charge of consultant program in tourism sector for 2013.</p>
@@ -502,7 +502,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>
 ', 'free', '1.0', NULL);
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('NWS63', 'NWS', 'Sample - News 1', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS63" typecode="NWS" typedescr="News"><descr>Sample - News 1</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 1</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS63" typecode="NWS" typedescr="News"><descr>Sample - News 1</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #1</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -512,7 +512,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>
 ', '20130115182927', '20130115182927', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS63" typecode="NWS" typedescr="News"><descr>Sample - News 1</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 1</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS63" typecode="NWS" typedescr="News"><descr>Sample - News 1</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #1</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -523,7 +523,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>
 ', 'free', '1.0', NULL);
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('NWS64', 'NWS', 'Sample - News 2', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS64" typecode="NWS" typedescr="News"><descr>Sample - News 2</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 2</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS64" typecode="NWS" typedescr="News"><descr>Sample - News 2</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #2</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -533,7 +533,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>
 ', '20130115182927', '20130115182927', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS64" typecode="NWS" typedescr="News"><descr>Sample - News 2</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 2</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS64" typecode="NWS" typedescr="News"><descr>Sample - News 2</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #2</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -544,7 +544,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>
 ', 'free', '1.0', NULL);
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('NWS65', 'NWS', 'Sample - News 3', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS65" typecode="NWS" typedescr="News"><descr>Sample - News 3</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 3</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS65" typecode="NWS" typedescr="News"><descr>Sample - News 3</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #3</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -554,7 +554,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>
 ', '20130115182927', '20130115182927', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS65" typecode="NWS" typedescr="News"><descr>Sample - News 3</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 3</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS65" typecode="NWS" typedescr="News"><descr>Sample - News 3</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #3</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -565,7 +565,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>
 ', 'free', '1.0', NULL);
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('NWS66', 'NWS', 'Sample - News 4', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS66" typecode="NWS" typedescr="News"><descr>Sample - News 4</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 4</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS66" typecode="NWS" typedescr="News"><descr>Sample - News 4</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #4</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -575,7 +575,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>
 ', '20130115182927', '20130115182927', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS66" typecode="NWS" typedescr="News"><descr>Sample - News 4</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 4</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS66" typecode="NWS" typedescr="News"><descr>Sample - News 4</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #4</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -586,7 +586,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>
 ', 'free', '1.0', NULL);
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('NWS67', 'NWS', 'Sample - News 5', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS67" typecode="NWS" typedescr="News"><descr>Sample - News 5</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 5</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS67" typecode="NWS" typedescr="News"><descr>Sample - News 5</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #5</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -596,7 +596,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182927</created><lastModified>20130115182927</lastModified></content>
 ', '20130115182927', '20130115182927', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS67" typecode="NWS" typedescr="News"><descr>Sample - News 5</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 5</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS67" typecode="NWS" typedescr="News"><descr>Sample - News 5</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #5</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -608,71 +608,51 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 ', 'free', '1.0', NULL);
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('CNG18', 'CNG', 'Welcome', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
 <content id="CNG18" typecode="CNG" typedescr="Generic Content"><descr>Welcome</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Welcome!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
-	Entando Town is a demo portal built with Entando.</p>
+	This is a demo website built using the Entando UI platform.</p>
 <p>
-	With this demo you can have a flavour of a bootstrap framework.<br />
-	In addition you will benefit from the responsive design feature....simply try to resize the window of your browser or to load this page from a mobile device to appreciate the responsive design capabilities.</p>
+	Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
 <p>
-	What are you waiting for?<br />
 	Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
 <p>
-	Username: <strong>admin</strong><br />
-	Password: <strong>adminadmin</strong></p>
-<p>
-	Enjoy Entando!</p>
+	<strong>Username</strong>: admin<br />
+	<strong>Password</strong>: adminadmin</p>
 ]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
-	Entando Town is a demo portal built with Entando.</p>
+	This is a demo website built using the Entando UI platform.</p>
 <p>
-	With this demo you can have a flavour of a bootstrap framework.<br />
-	In addition you will benefit from the responsive design feature....simply try to resize the window of your browser or to load this page from a mobile device to appreciate the responsive design capabilities.</p>
+	Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
 <p>
-	What are you waiting for?<br />
-	Try the Administration Area!</p>
+	Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
 <p>
-	Use the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
-<p>
-	Username: <strong>admin&nbsp;</strong><br />
-	Password: <strong>adminadmin</strong></p>
+	<strong>Username</strong>: admin&nbsp;<br />
+	<strong>Password</strong>: adminadmin</p>
 <p>
 	Find out how many things you can customize, create a new content, a new page or even your own user.</p>
-<p>
-	Enjoy Entando!</p>
-]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Entando Town portal new look</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link" /><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>7.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20130314141043</lastModified></content>
-', '20121010173248', '20130314141043', '<?xml version="1.0" encoding="UTF-8"?>
+]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Welcome to Entando</text></attribute><list name="Links" attributetype="Monolist" nestedtype="Link" /><list name="Attaches" attributetype="Monolist" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>10.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20150212102321</lastModified></content>
+', '20121010173248', '20150212102321', '<?xml version="1.0" encoding="UTF-8"?>
 <content id="CNG18" typecode="CNG" typedescr="Generic Content"><descr>Welcome</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Welcome!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
-	Entando Town is a demo portal built with Entando.</p>
+	This is a demo website built using the Entando UI platform.</p>
 <p>
-	With this demo you can have a flavour of a bootstrap framework.<br />
-	In addition you will benefit from the responsive design feature....simply try to resize the window of your browser or to load this page from a mobile device to appreciate the responsive design capabilities.</p>
+	Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
 <p>
-	What are you waiting for?<br />
 	Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
 <p>
-	Username: <strong>admin</strong><br />
-	Password: <strong>adminadmin</strong></p>
-<p>
-	Enjoy Entando!</p>
+	<strong>Username</strong>: admin<br />
+	<strong>Password</strong>: adminadmin</p>
 ]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
-	Entando Town is a demo portal built with Entando.</p>
+	This is a demo website built using the Entando UI platform.</p>
 <p>
-	With this demo you can have a flavour of a bootstrap framework.<br />
-	In addition you will benefit from the responsive design feature....simply try to resize the window of your browser or to load this page from a mobile device to appreciate the responsive design capabilities.</p>
+	Sign in as the administrator and begin looking at how users, roles, pages and themes are defined and modified using Entando. The entire demo also leverages Bootstrap to provide a responsive design example. After understanding the basic structure of Entando, look for more training resources on <a href="#!U;https://github.com/entando!#">github.com/entando</a> and at <a href="#!U;http://www.entando.com!#">entando.com</a>.</p>
 <p>
-	What are you waiting for?<br />
-	Try the Administration Area!</p>
+	Try the Administration Area using the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
 <p>
-	Use the <strong>Sign in</strong> drop-down up there in the top bar with the following account:</p>
-<p>
-	Username: <strong>admin&nbsp;</strong><br />
-	Password: <strong>adminadmin</strong></p>
+	<strong>Username</strong>: admin&nbsp;<br />
+	<strong>Password</strong>: adminadmin</p>
 <p>
 	Find out how many things you can customize, create a new content, a new page or even your own user.</p>
-<p>
-	Enjoy Entando!</p>
-]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Entando Town portal new look</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link" /><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>7.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20130314141043</lastModified></content>
-', 'free', '7.0', 'admin');
+]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Welcome to Entando</text></attribute><list name="Links" attributetype="Monolist" nestedtype="Link" /><list name="Attaches" attributetype="Monolist" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>10.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20150212102321</lastModified></content>
+', 'free', '10.0', 'admin');
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('NWS68', 'NWS', 'Sample - News 6', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS68" typecode="NWS" typedescr="News"><descr>Sample - News 6</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 6</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS68" typecode="NWS" typedescr="News"><descr>Sample - News 6</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #6</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			
@@ -682,7 +662,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 			
 			]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20130115182928</created><lastModified>20130115182928</lastModified></content>
 ', '20130115182928', '20130115182928', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="NWS68" typecode="NWS" typedescr="News"><descr>Sample - News 6</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news 6</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
+<content id="NWS68" typecode="NWS" typedescr="News"><descr>Sample - News 6</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20120613</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">Here come the news #6</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
 			
 			<p> Scenester farm-to-table, ethical pinterest DIY quinoa before they sold out cardigan. Wolf sriracha portland ethical freegan. Fingerstache locavore +1 selvage chambray. Flexitarian umami cray quinoa raw denim whatever. American viral vegan DIY polaroid, sweater etsy williamsburg +1 bicycle rights whatever PBR hoodie photo booth. Master blog mumblecore vice, pork belly fap leggings sweater. Synth whatever put a bird on it lo-fi, stumptown tumblr typewriter helvetica odd future banksy post-ironic selvage.</p>
 			

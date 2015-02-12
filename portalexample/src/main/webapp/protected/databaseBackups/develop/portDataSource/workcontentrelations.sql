@@ -8,6 +8,8 @@ INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('RSL28', 'reso
 INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('RSL28', 'downloads');
 INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('RSL32', 'resolutions');
 INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('RSL32', 'resolutions_giunta');
+INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD54', 'selcf_certifications');
+INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD54', 'downloads');
 INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD48', 'citizen_registry');
 INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD48', 'documents');
 INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD48', 'downloads');
@@ -16,5 +18,3 @@ INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD50', 'down
 INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD50', 'taxes');
 INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD52', 'selcf_certifications');
 INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD52', 'downloads');
-INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD54', 'selcf_certifications');
-INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLD54', 'downloads');
