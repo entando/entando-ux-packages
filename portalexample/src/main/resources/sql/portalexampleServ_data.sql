@@ -20,14 +20,17 @@ INSERT INTO authrolepermissions (rolename, permissionname) VALUES ('admin', 'sup
 INSERT INTO authusers (username, passwd, registrationdate, lastaccess, lastpasswordchange, active) VALUES ('admin', 'adminadmin', '2008-10-10 00:00:00', '2013-03-14 00:00:00', NULL, 1);
 
 
-INSERT INTO authusergroups (username, groupname) VALUES ('admin', 'administrators');
+INSERT INTO authusergrouprole (username, groupname, rolename) VALUES ('admin', 'administrators', 'admin');
 
-
-INSERT INTO authuserroles (username, rolename) VALUES ('admin', 'admin');
 
 INSERT INTO authuserprofiles (username, profiletype, profilexml, publicprofile) VALUES ('admin', 'PFL', '<?xml version="1.0" encoding="UTF-8"?>
 <profile id="admin" typecode="PFL" typedescr="Default user profile"><descr /><groups /><categories /><attributes><attribute name="fullname" attributetype="Monotext" /><attribute name="email" attributetype="Monotext" /></attributes></profile>
 ', 0);
+
+
+INSERT INTO authuserprofileattrroles (username, attrname, rolename) VALUES ('admin', 'fullname', 'userprofile:fullname');
+INSERT INTO authuserprofileattrroles (username, attrname, rolename) VALUES ('admin', 'email', 'userprofile:email');
+
 
 INSERT INTO authusershortcuts (username, config) VALUES ('admin', '<?xml version="1.0" encoding="UTF-8"?>
 <shortcuts>
@@ -49,6 +52,7 @@ INSERT INTO portalexample_cards (id, holder, description, date, note) VALUES (2,
 INSERT INTO portalexample_cards (id, holder, description, date, note) VALUES (3, 'Verdi Nicola', 'Fair', '2011-01-25 00:00:00', 'Lorem ipsum.');
 INSERT INTO portalexample_cards (id, holder, description, date, note) VALUES (4, 'Verdi Anna', 'Old Town', '2010-11-05 00:00:00', 'Lorem ipsum.');
 INSERT INTO portalexample_cards (id, holder, description, date, note) VALUES (1, 'Bianchi Marco', 'Old Town', '2010-10-20 00:00:00', 'Lorem ipsum.');
+
 
 INSERT INTO actionlogrecords (id, username, actiondate, updatedate, namespace, actionname, parameters, activitystreaminfo) VALUES (1, 'admin', '2013-09-27 10:58:38', '2013-09-27 10:58:38', '/do/Page', 'save', 'selectedNode=service
 model=service
