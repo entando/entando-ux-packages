@@ -5,7 +5,7 @@
 	<groupId>org.entando.entando</groupId>
 	<artifactId>portalexample</artifactId>
 	<packaging>war</packaging>
-	<version>4.1.2-SNAPSHOT</version>
+	<version>4.2.0-TP1</version>
 	<name>portalexample</name>
 	<description>A Portal Example for Entando</description>
 	<url>http://www.entando.com/</url>
@@ -121,7 +121,7 @@
 
 		<skipDerby>true</skipDerby>
 		<skipStandalone>true</skipStandalone>
-		<entando.version>4.1.2-SNAPSHOT</entando.version>
+		<entando.version>4.2.0-TP1</entando.version>
 		<spring.version>4.0.6.RELEASE</spring.version>
 		<struts2.version>2.3.16.3</struts2.version>
 		<cxf.version>3.0.0-milestone2</cxf.version>
@@ -846,6 +846,20 @@
 			<version>3.1.0</version>
 			<scope>test</scope>
 		</dependency>
-		
+	 <dependency>
+	  <groupId>org.glassfish.jersey.containers</groupId>
+	  <artifactId>jersey-container-servlet</artifactId>
+	  <version>2.5.1</version>
+	 </dependency>
+	 <dependency>
+	  <groupId>org.glassfish.jersey.core</groupId>
+	  <artifactId>jersey-client</artifactId>
+	  <version>2.5.1</version>
+	 </dependency>
+	 <dependency>
+	  <groupId>org.glassfish.jersey.media</groupId>
+	  <artifactId>jersey-media-moxy</artifactId>
+	  <version>2.5.1</version>
+	 </dependency>
 	</dependencies>
 </project>
