@@ -5,7 +5,7 @@
 	<groupId>org.entando.entando</groupId>
 	<artifactId>portalexample</artifactId>
 	<packaging>war</packaging>
-	<version>4.2.0-TP1</version>
+	<version>4.2.0-SNAPSHOT</version>
 	<name>portalexample</name>
 	<description>A Portal Example for Entando</description>
 	<url>http://www.entando.com/</url>
@@ -121,7 +121,7 @@
 
 		<skipDerby>true</skipDerby>
 		<skipStandalone>true</skipStandalone>
-		<entando.version>4.2.0-TP1</entando.version>
+		<entando.version>4.2.0-SNAPSHOT</entando.version>
 		<spring.version>4.0.6.RELEASE</spring.version>
 		<struts2.version>2.3.16.3</struts2.version>
 		<cxf.version>3.0.0-milestone2</cxf.version>
