@@ -2,7 +2,7 @@
 
 ```entando-ux-packages``` is an other fundamental part of the Entando platform project. It provides samples of Entando based applications.
 
-The **Entando ux-Packages** project includes the following modules:
+The **Entando UX-Packages** project includes the following modules:
 
 * **admin-console-webapp**, sample of an Entando application based on engine and admin-console core components 
 (see [entando-core](https://github.com/entando/entando-core)), 
