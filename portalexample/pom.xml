@@ -122,9 +122,9 @@
 		<skipDerby>true</skipDerby>
 		<skipStandalone>true</skipStandalone>
 		<entando.version>4.2.0-SNAPSHOT</entando.version>
-		<spring.version>4.0.6.RELEASE</spring.version>
+		<spring.version>4.1.4.RELEASE</spring.version>
 		<struts2.version>2.3.16.3</struts2.version>
-		<cxf.version>3.0.0-milestone2</cxf.version>
+		<cxf.version>3.0.4</cxf.version>
 	</properties>
 	<build>
 		<finalName>portalexample</finalName>
@@ -846,5 +846,20 @@
 			<version>3.1.0</version>
 			<scope>test</scope>
 		</dependency>
+	 <dependency>
+	  <groupId>org.glassfish.jersey.containers</groupId>
+	  <artifactId>jersey-container-servlet</artifactId>
+	  <version>2.5.1</version>
+	 </dependency>
+	 <dependency>
+	  <groupId>org.glassfish.jersey.core</groupId>
+	  <artifactId>jersey-client</artifactId>
+	  <version>2.5.1</version>
+	 </dependency>
+	 <dependency>
+	  <groupId>org.glassfish.jersey.media</groupId>
+	  <artifactId>jersey-media-moxy</artifactId>
+	  <version>2.5.1</version>
+	 </dependency>
 	</dependencies>
 </project>
