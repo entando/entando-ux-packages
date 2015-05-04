@@ -1014,7 +1014,7 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 	<frame pos="10">
 		<descr>Toolbar 2</descr>
 	</frame>
-	<frame pos="11">
+	<frame pos="11" main="true">
 		<descr>Top Story</descr>
 	</frame>
 	<frame pos="12">
@@ -1310,7 +1310,7 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 	<frame pos="14">
 		<descr>Side 4</descr>
 	</frame>
-	<frame pos="15">
+	<frame pos="15" main="true">
 		<descr>Content 1</descr>
 	</frame>
 	<frame pos="16">
@@ -5727,28 +5727,24 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 ', 'free', '2.0', 'admin');
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('CNG40', 'CNG', 'Public Relations Office', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
 <content id="CNG40" typecode="CNG" typedescr="Generic Content"><descr>Public Relations Office</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="it">URP - Ufficio Relazioni con il Pubblico</text><text lang="en">Public Relations Office</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
-	Telefono: <strong>+39070240053</strong><br />
 	E-mail: <strong>info@entando.com</strong></p>
 <p>
 	Orario di Ricevimento:<br />
 	dal <strong>Luned&igrave;</strong>&nbsp;al&nbsp;<strong>Venerd&igrave;</strong>: dalle <strong>8.00 </strong>alle&nbsp;<strong>13</strong>.<strong>00</strong><br />
 	<strong>Marted&igrave;</strong> e <strong>Mercoled&igrave;</strong>: dalle <strong>15.00 </strong>alle&nbsp;<strong>17.00</strong></p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	Phone: <strong>+39070240053</strong><br />
 	E-mail: <strong>info@entando.com</strong></p>
 <p>
 	Open:<br />
 	from <strong>Monday</strong> to <strong>Friday</strong>: <strong>8.00 a.m.</strong> to <strong>1.00 p.m.</strong><br />
 	<strong>Tuesday</strong>&nbsp;and&nbsp;<strong>Wednesday</strong>: <strong>4.00 p.m.</strong> to <strong>5.00 p.m.</strong></p>
 ]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
-	Telefono: <strong>+39070240053</strong><br />
 	E-mail: <strong>info@entando.com</strong></p>
 <p>
 	Orario di Ricevimento:<br />
 	dal <strong>Luned&igrave;</strong>&nbsp;al&nbsp;<strong>Venerd&igrave;</strong>: dalle <strong>8.00</strong> alle&nbsp;<strong>13.00</strong><br />
 	<strong>Marted&igrave;</strong> e <strong>Mercoled&igrave;</strong>: dalle <strong>15.00</strong> alle&nbsp;<strong>17.00</strong></p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	Phone: <strong>+39070240053</strong><br />
 	E-mail: <strong>info@entando.com</strong></p>
 <p>
 	Open:<br />
@@ -5757,28 +5753,24 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 ]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link" /><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>3.0</version><lastEditor>admin</lastEditor><created>20121122184256</created><lastModified>20130314145742</lastModified></content>
 ', '20121122184256', '20130314145742', '<?xml version="1.0" encoding="UTF-8"?>
 <content id="CNG40" typecode="CNG" typedescr="Generic Content"><descr>Public Relations Office</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="it">URP - Ufficio Relazioni con il Pubblico</text><text lang="en">Public Relations Office</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
-	Telefono: <strong>+39070240053</strong><br />
 	E-mail: <strong>info@entando.com</strong></p>
 <p>
 	Orario di Ricevimento:<br />
 	dal <strong>Luned&igrave;</strong>&nbsp;al&nbsp;<strong>Venerd&igrave;</strong>: dalle <strong>8.00 </strong>alle&nbsp;<strong>13</strong>.<strong>00</strong><br />
 	<strong>Marted&igrave;</strong> e <strong>Mercoled&igrave;</strong>: dalle <strong>15.00 </strong>alle&nbsp;<strong>17.00</strong></p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	Phone: <strong>+39070240053</strong><br />
 	E-mail: <strong>info@entando.com</strong></p>
 <p>
 	Open:<br />
 	from <strong>Monday</strong> to <strong>Friday</strong>: <strong>8.00 a.m.</strong> to <strong>1.00 p.m.</strong><br />
 	<strong>Tuesday</strong>&nbsp;and&nbsp;<strong>Wednesday</strong>: <strong>4.00 p.m.</strong> to <strong>5.00 p.m.</strong></p>
 ]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
-	Telefono: <strong>+39070240053</strong><br />
 	E-mail: <strong>info@entando.com</strong></p>
 <p>
 	Orario di Ricevimento:<br />
 	dal <strong>Luned&igrave;</strong>&nbsp;al&nbsp;<strong>Venerd&igrave;</strong>: dalle <strong>8.00</strong> alle&nbsp;<strong>13.00</strong><br />
 	<strong>Marted&igrave;</strong> e <strong>Mercoled&igrave;</strong>: dalle <strong>15.00</strong> alle&nbsp;<strong>17.00</strong></p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
-	Phone: <strong>+39070240053</strong><br />
 	E-mail: <strong>info@entando.com</strong></p>
 <p>
 	Open:<br />
