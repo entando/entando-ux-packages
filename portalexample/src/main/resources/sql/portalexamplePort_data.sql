@@ -2522,10 +2522,8 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 </ul>', 1);
 INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('jacms_content_viewer_list_userfilter_ent_Enumer', NULL, 'jacms', NULL, '<#assign wp=JspTaglibs["/aps-core"]>
 <#assign c=JspTaglibs["http://java.sun.com/jsp/jstl/core"]>
-
 <#assign formFieldNameVar = userFilterOptionVar.formFieldNames[0] >
 <#assign formFieldValue = userFilterOptionVar.getFormFieldValue(formFieldNameVar) >
-
 <div class="control-group">
 	<@c.set var="i18n_Attribute_Key" value="${userFilterOptionVar.attribute.name}" />
 	<label for="${formFieldNameVar}" class="control-label"><@wp.i18n key="${i18n_Attribute_Key}" /></label>
@@ -2537,7 +2535,22 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			</#list>
 		</select>
 	</div>
-
+</div>', 1);
+INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('jacms_content_viewer_list_userfilter_ent_EnumerMap', NULL, 'jacms', NULL, '<#assign wp=JspTaglibs["/aps-core"]>
+<#assign c=JspTaglibs["http://java.sun.com/jsp/jstl/core"]>
+<#assign formFieldNameVar = userFilterOptionVar.formFieldNames[0] >
+<#assign formFieldValue = userFilterOptionVar.getFormFieldValue(formFieldNameVar) >
+<div class="control-group">
+	<@c.set var="i18n_Attribute_Key" value="${userFilterOptionVar.attribute.name}" />
+	<label for="${formFieldNameVar}" class="control-label"><@wp.i18n key="${i18n_Attribute_Key}" /></label>
+	<div class="controls">
+		<select name="${formFieldNameVar}" id="${formFieldNameVar}" class="input-xlarge">
+			<option value=""><@wp.i18n key="ALL" /></option>
+			<#list userFilterOptionVar.attribute.mapItems as enumeratorMapItemVar>
+			<option value="${enumeratorMapItemVar.key}" <#if (formFieldValue??) && (enumeratorMapItemVar.key == formFieldValue)>selected="selected"</#if> ><@c.out value="${enumeratorMapItemVar.value}" /></option>
+			</#list>
+		</select>
+	</div>
 </div>', 1);
 INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('entando-widget-navigation_menu_include', NULL, NULL, NULL, '<#assign c=JspTaglibs["http://java.sun.com/jsp/jstl/core"]>
 <#assign wp=JspTaglibs["/aps-core"]>
@@ -2654,6 +2667,9 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			</#if>
 			<#if userFilterOptionVar.attribute.type == "Enumerator" >
 				<@wp.fragment code="jacms_content_viewer_list_userfilter_ent_Enumer" escapeXml=false />
+			</#if>
+			<#if userFilterOptionVar.attribute.type == "EnumeratorMap" >
+				<@wp.fragment code="jacms_content_viewer_list_userfilter_ent_EnumerMap" escapeXml=false />
 			</#if>
 			<#if userFilterOptionVar.attribute.type == "Number">
 				<@wp.fragment code="jacms_content_viewer_list_userfilter_ent_Number" escapeXml=false />
@@ -3053,11 +3069,9 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('jacms_content_viewer', 'content_viewer', 'jacms', NULL, '<#assign jacms=JspTaglibs["/jacms-aps-core"]>
 <#assign c=JspTaglibs["http://java.sun.com/jsp/jstl/core"]>
 <#assign wp=JspTaglibs["/aps-core"]>
-
 <@jacms.contentInfo param="authToEdit" var="canEditThis" />
 <@jacms.contentInfo param="contentId" var="myContentId" />
-
-<#if (canEditThis)>
+<#if (canEditThis??) && (canEditThis)>
 	<div class="bar-content-edit">
 		<a href="<@wp.info key="systemParam" paramName="applicationBaseURL" />do/jacms/Content/edit.action?contentId=<@jacms.contentInfo param="contentId" />" class="btn btn-info">
 			<@wp.i18n key="EDIT_THIS_CONTENT" /> <i class="icon-edit icon-white"></i></a>
