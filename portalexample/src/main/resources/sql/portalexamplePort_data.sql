@@ -1094,18 +1094,14 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-
 		<link rel="icon" href="<@wp.info key="systemParam" paramName="applicationBaseURL" />favicon.png" type="image/png" />
-
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 			<script src="<@wp.resourceURL />static/js/entando-misc-html5-essentials/html5shiv.js"></script>
 		<![endif]-->
 		<@wp.fragment code="models-lesscss-active" escapeXml=false />
         <@wp.fragment code="models-common-utils" escapeXml=false />
-
 	</head>
-
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
@@ -1366,21 +1362,15 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-
 		<link rel="icon" href="<@wp.info key="systemParam" paramName="applicationBaseURL" />favicon.png" type="image/png" />
-
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 			<script src="<@wp.resourceURL />static/js/entando-misc-html5-essentials/html5shiv.js"></script>
 		<![endif]-->
-
 		<@wp.fragment code="models-lesscss-active" escapeXml=false />
         <@wp.fragment code="models-common-utils" escapeXml=false />
-		
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans|Rambla|Calligraffitti" rel="stylesheet" type="text/css" />
-
 	</head>
-
 <body>
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
@@ -4467,6 +4457,18 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		</div>
 	</div>
 </@s.elseif>
+<@s.elseif test="#attribute.type == ''EnumeratorMap''">
+	<div class="control-group <@s.property value="%{'' attribute-type-''+#attribute.type+'' ''}" />">
+		<label class="control-label" for="<@s.property value="#attribute_id" />">
+			<@wp.i18n key="${i18n_attribute_name}" />
+			<@wp.fragment code="userprofile_is_front_AttributeInfo" escapeXml=false /> 
+		</label>
+		<div class="controls">
+			<@wp.fragment code="userprofile_is_front-EnumeratorMapAttribute" escapeXml=false /> 
+			<@wp.fragment code="userprofile_is_front_attributeInfo-help-block" escapeXml=false />
+		</div>
+	</div>
+</@s.elseif>
 <@s.elseif test="#attribute.type == ''Hypertext''">
 	<div class="control-group <@s.property value="%{'' attribute-type-''+#attribute.type+'' ''}" />">
 		<label class="control-label" for="<@s.property value="#attribute_id" />">
@@ -4697,6 +4699,9 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			<@s.elseif test="#attribute.type == ''Enumerator''">
 				<@wp.fragment code="userprofile_is_front-EnumeratorAttribute" escapeXml=false />
 			</@s.elseif>
+			<@s.elseif test="#attribute.type == ''EnumeratorMap''">
+				<@wp.fragment code="userprofile_is_front-EnumeratorMapAttribute" escapeXml=false />
+			</@s.elseif>
 			<@s.elseif test="#attribute.type == ''Hypertext''">
 				<@wp.fragment code="userprofile_is_front-HypertextAttribute" escapeXml=false />
 			</@s.elseif>
@@ -4814,12 +4819,18 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 <@s.set name="parentAttribute" value=""></@s.set>', 1);
 INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('userprofile_is_front-EnumeratorAttribute', NULL, NULL, NULL, '<#assign s=JspTaglibs["/struts-tags"]>
 <#assign wpsf=JspTaglibs["/apsadmin-form"]>
-
 <@wpsf.select useTabindexAutoIncrement=true
 	name="%{#attributeTracer.getFormFieldName(#attribute)}"
 	id="%{attribute_id}"  
 	headerKey="" headerValue="" 
 	list="#attribute.items" value="%{#attribute.getText()}" />', 1);
+INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('userprofile_is_front-EnumeratorMapAttribute', NULL, NULL, NULL, '<#assign s=JspTaglibs["/struts-tags"]>
+<#assign wpsf=JspTaglibs["/apsadmin-form"]>
+<@wpsf.select useTabindexAutoIncrement=true
+	name="%{#attributeTracer.getFormFieldName(#attribute)}"
+	id="%{attribute_id}"  
+	headerKey="" headerValue="" 
+	list="#attribute.mapItems" value="%{#attribute.getText()}" listKey="key" listValue="value" />', 1);
 
 
 
