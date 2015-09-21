@@ -1094,18 +1094,14 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-
 		<link rel="icon" href="<@wp.info key="systemParam" paramName="applicationBaseURL" />favicon.png" type="image/png" />
-
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 			<script src="<@wp.resourceURL />static/js/entando-misc-html5-essentials/html5shiv.js"></script>
 		<![endif]-->
 		<@wp.fragment code="models-lesscss-active" escapeXml=false />
         <@wp.fragment code="models-common-utils" escapeXml=false />
-
 	</head>
-
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
@@ -1366,21 +1362,15 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-
 		<link rel="icon" href="<@wp.info key="systemParam" paramName="applicationBaseURL" />favicon.png" type="image/png" />
-
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 			<script src="<@wp.resourceURL />static/js/entando-misc-html5-essentials/html5shiv.js"></script>
 		<![endif]-->
-
 		<@wp.fragment code="models-lesscss-active" escapeXml=false />
         <@wp.fragment code="models-common-utils" escapeXml=false />
-		
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans|Rambla|Calligraffitti" rel="stylesheet" type="text/css" />
-
 	</head>
-
 <body>
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
@@ -2522,10 +2512,8 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 </ul>', 1);
 INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('jacms_content_viewer_list_userfilter_ent_Enumer', NULL, 'jacms', NULL, '<#assign wp=JspTaglibs["/aps-core"]>
 <#assign c=JspTaglibs["http://java.sun.com/jsp/jstl/core"]>
-
 <#assign formFieldNameVar = userFilterOptionVar.formFieldNames[0] >
 <#assign formFieldValue = userFilterOptionVar.getFormFieldValue(formFieldNameVar) >
-
 <div class="control-group">
 	<@c.set var="i18n_Attribute_Key" value="${userFilterOptionVar.attribute.name}" />
 	<label for="${formFieldNameVar}" class="control-label"><@wp.i18n key="${i18n_Attribute_Key}" /></label>
@@ -2537,7 +2525,22 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			</#list>
 		</select>
 	</div>
-
+</div>', 1);
+INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('jacms_content_viewer_list_userfilter_ent_EnumerMap', NULL, 'jacms', NULL, '<#assign wp=JspTaglibs["/aps-core"]>
+<#assign c=JspTaglibs["http://java.sun.com/jsp/jstl/core"]>
+<#assign formFieldNameVar = userFilterOptionVar.formFieldNames[0] >
+<#assign formFieldValue = userFilterOptionVar.getFormFieldValue(formFieldNameVar) >
+<div class="control-group">
+	<@c.set var="i18n_Attribute_Key" value="${userFilterOptionVar.attribute.name}" />
+	<label for="${formFieldNameVar}" class="control-label"><@wp.i18n key="${i18n_Attribute_Key}" /></label>
+	<div class="controls">
+		<select name="${formFieldNameVar}" id="${formFieldNameVar}" class="input-xlarge">
+			<option value=""><@wp.i18n key="ALL" /></option>
+			<#list userFilterOptionVar.attribute.mapItems as enumeratorMapItemVar>
+			<option value="${enumeratorMapItemVar.key}" <#if (formFieldValue??) && (enumeratorMapItemVar.key == formFieldValue)>selected="selected"</#if> ><@c.out value="${enumeratorMapItemVar.value}" /></option>
+			</#list>
+		</select>
+	</div>
 </div>', 1);
 INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('entando-widget-navigation_menu_include', NULL, NULL, NULL, '<#assign c=JspTaglibs["http://java.sun.com/jsp/jstl/core"]>
 <#assign wp=JspTaglibs["/aps-core"]>
@@ -2654,6 +2657,9 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			</#if>
 			<#if userFilterOptionVar.attribute.type == "Enumerator" >
 				<@wp.fragment code="jacms_content_viewer_list_userfilter_ent_Enumer" escapeXml=false />
+			</#if>
+			<#if userFilterOptionVar.attribute.type == "EnumeratorMap" >
+				<@wp.fragment code="jacms_content_viewer_list_userfilter_ent_EnumerMap" escapeXml=false />
 			</#if>
 			<#if userFilterOptionVar.attribute.type == "Number">
 				<@wp.fragment code="jacms_content_viewer_list_userfilter_ent_Number" escapeXml=false />
@@ -3053,11 +3059,9 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('jacms_content_viewer', 'content_viewer', 'jacms', NULL, '<#assign jacms=JspTaglibs["/jacms-aps-core"]>
 <#assign c=JspTaglibs["http://java.sun.com/jsp/jstl/core"]>
 <#assign wp=JspTaglibs["/aps-core"]>
-
 <@jacms.contentInfo param="authToEdit" var="canEditThis" />
 <@jacms.contentInfo param="contentId" var="myContentId" />
-
-<#if (canEditThis)>
+<#if (canEditThis??) && (canEditThis)>
 	<div class="bar-content-edit">
 		<a href="<@wp.info key="systemParam" paramName="applicationBaseURL" />do/jacms/Content/edit.action?contentId=<@jacms.contentInfo param="contentId" />" class="btn btn-info">
 			<@wp.i18n key="EDIT_THIS_CONTENT" /> <i class="icon-edit icon-white"></i></a>
@@ -4156,43 +4160,43 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 useTabindexAutoIncrement=true id="%{attribute_id}" 
 name="%{#attributeTracer.getFormFieldName(#attribute)}" 
 value="%{#dateAttributeValue}" maxlength="10" cssClass="text userprofile-date" />
-  &#32;
+&#32;
 <#assign js_for_datepicker="jQuery(function($){
-  $.datepicker.regional[''''it''''] = {
-   closeText: ''''Chiudi'''',
-   prevText: ''''&#x3c;Prec'''',
-   nextText: ''''Succ&#x3e;'''',
-   currentText: ''''Oggi'''',
-   monthNames: [''''Gennaio'''',''''Febbraio'''',''''Marzo'''',''''Aprile'''',''''Maggio'''',''''Giugno'''',
-  ''''Luglio'''',''''Agosto'''',''''Settembre'''',''''Ottobre'''',''''Novembre'''',''''Dicembre''''],
-   monthNamesShort:  [''''Gen'''',''''Feb'''',''''Mar'''',''''Apr'''',''''Mag'''',''''Giu'''',
-  ''''Lug'''',''''Ago'''',''''Set'''',''''Ott'''',''''Nov'''',''''Dic''''],
-   dayNames: [''''Domenica'''',''''Luned&#236'''',''''Marted&#236'''',''''Mercoled&#236'''',''''Gioved&#236'''',''''Venerd&#236'''',''''Sabato''''],
-   dayNamesShort: [''''Dom'''',''''Lun'''',''''Mar'''',''''Mer'''',''''Gio'''',''''Ven'''',''''Sab''''],
-   dayNamesMin: [''''Do'''',''''Lu'''',''''Ma'''',''''Me'''',''''Gi'''',''''Ve'''',''''Sa''''],
-   weekHeader: ''''Sm'''',
-   dateFormat: ''''dd/mm/yy'''',
-   firstDay: 1,
-   isRTL: false,
-   showMonthAfterYear: false,
-   yearSuffix: ''''''''};
- });
+$.datepicker.regional[''''it''''] = {
+closeText: ''''Chiudi'''',
+prevText: ''''&#x3c;Prec'''',
+nextText: ''''Succ&#x3e;'''',
+currentText: ''''Oggi'''',
+monthNames: [''''Gennaio'''',''''Febbraio'''',''''Marzo'''',''''Aprile'''',''''Maggio'''',''''Giugno'''',
+''''Luglio'''',''''Agosto'''',''''Settembre'''',''''Ottobre'''',''''Novembre'''',''''Dicembre''''],
+monthNamesShort:  [''''Gen'''',''''Feb'''',''''Mar'''',''''Apr'''',''''Mag'''',''''Giu'''',
+''''Lug'''',''''Ago'''',''''Set'''',''''Ott'''',''''Nov'''',''''Dic''''],
+dayNames: [''''Domenica'''',''''Luned&#236'''',''''Marted&#236'''',''''Mercoled&#236'''',''''Gioved&#236'''',''''Venerd&#236'''',''''Sabato''''],
+dayNamesShort: [''''Dom'''',''''Lun'''',''''Mar'''',''''Mer'''',''''Gio'''',''''Ven'''',''''Sab''''],
+dayNamesMin: [''''Do'''',''''Lu'''',''''Ma'''',''''Me'''',''''Gi'''',''''Ve'''',''''Sa''''],
+weekHeader: ''''Sm'''',
+dateFormat: ''''dd/mm/yy'''',
+firstDay: 1,
+isRTL: false,
+showMonthAfterYear: false,
+yearSuffix: ''''''''};
+});
 
- jQuery(function($) {
-  if (Modernizr.touch && Modernizr.inputtypes.date) {
-   $.each( $(\"input.userprofile-date\"), function(index, item) {
-    item.type = ''''date'''';
-   });
-  } else {
-   $.datepicker.setDefaults( $.datepicker.regional[ \"${currentLangVar}\" ] );
-   $(\"input.userprofile-date\").datepicker({
-     changeMonth: true,
-     changeYear: true,
-     dateFormat: \"dd/mm/yy\"
-    });
-  }
- });
- ">
+jQuery(function($) {
+if (Modernizr.touch && Modernizr.inputtypes.date) {
+$.each( $(\"input.userprofile-date\"), function(index, item) {
+item.type = ''''date'''';
+});
+} else {
+$.datepicker.setDefaults( $.datepicker.regional[ \"${currentLangVar}\" ] );
+$(\"input.userprofile-date\").datepicker({
+changeMonth: true,
+changeYear: true,
+dateFormat: \"dd/mm/yy\"
+});
+}
+});
+">
 
 <@wp.headInfo type="JS" info="entando-misc-html5-essentials/modernizr-2.5.3-full.js" />
 <@wp.headInfo type="JS_EXT" info="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js" />
@@ -4453,6 +4457,18 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		</div>
 	</div>
 </@s.elseif>
+<@s.elseif test="#attribute.type == ''EnumeratorMap''">
+	<div class="control-group <@s.property value="%{'' attribute-type-''+#attribute.type+'' ''}" />">
+		<label class="control-label" for="<@s.property value="#attribute_id" />">
+			<@wp.i18n key="${i18n_attribute_name}" />
+			<@wp.fragment code="userprofile_is_front_AttributeInfo" escapeXml=false /> 
+		</label>
+		<div class="controls">
+			<@wp.fragment code="userprofile_is_front-EnumeratorMapAttribute" escapeXml=false /> 
+			<@wp.fragment code="userprofile_is_front_attributeInfo-help-block" escapeXml=false />
+		</div>
+	</div>
+</@s.elseif>
 <@s.elseif test="#attribute.type == ''Hypertext''">
 	<div class="control-group <@s.property value="%{'' attribute-type-''+#attribute.type+'' ''}" />">
 		<label class="control-label" for="<@s.property value="#attribute_id" />">
@@ -4683,6 +4699,9 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			<@s.elseif test="#attribute.type == ''Enumerator''">
 				<@wp.fragment code="userprofile_is_front-EnumeratorAttribute" escapeXml=false />
 			</@s.elseif>
+			<@s.elseif test="#attribute.type == ''EnumeratorMap''">
+				<@wp.fragment code="userprofile_is_front-EnumeratorMapAttribute" escapeXml=false />
+			</@s.elseif>
 			<@s.elseif test="#attribute.type == ''Hypertext''">
 				<@wp.fragment code="userprofile_is_front-HypertextAttribute" escapeXml=false />
 			</@s.elseif>
@@ -4800,12 +4819,18 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 <@s.set name="parentAttribute" value=""></@s.set>', 1);
 INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('userprofile_is_front-EnumeratorAttribute', NULL, NULL, NULL, '<#assign s=JspTaglibs["/struts-tags"]>
 <#assign wpsf=JspTaglibs["/apsadmin-form"]>
-
 <@wpsf.select useTabindexAutoIncrement=true
 	name="%{#attributeTracer.getFormFieldName(#attribute)}"
 	id="%{attribute_id}"  
 	headerKey="" headerValue="" 
 	list="#attribute.items" value="%{#attribute.getText()}" />', 1);
+INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('userprofile_is_front-EnumeratorMapAttribute', NULL, NULL, NULL, '<#assign s=JspTaglibs["/struts-tags"]>
+<#assign wpsf=JspTaglibs["/apsadmin-form"]>
+<@wpsf.select useTabindexAutoIncrement=true
+	name="%{#attributeTracer.getFormFieldName(#attribute)}"
+	id="%{attribute_id}"  
+	headerKey="" headerValue="" 
+	list="#attribute.mapItems" value="%{#attribute.getText()}" listKey="key" listValue="value" />', 1);
 
 
 
