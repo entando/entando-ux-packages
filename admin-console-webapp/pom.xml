@@ -118,7 +118,7 @@
 		<entando.version>4.2.0-SNAPSHOT</entando.version>
 		<spring.version>4.1.4.RELEASE</spring.version>
 		<struts2.version>2.3.16.3</struts2.version>
-		<cxf.version>2.7.5</cxf.version>
+		<cxf.version>2.7.14</cxf.version>
 	</properties>
 	<build>
 		<finalName>admin-console-webapp</finalName>
@@ -749,20 +749,5 @@
 			<version>4.8.2</version>
 			<scope>test</scope>
 		</dependency>
-	 <dependency>
-	  <groupId>org.glassfish.jersey.containers</groupId>
-	  <artifactId>jersey-container-servlet</artifactId>
-	  <version>2.5.1</version>
-	 </dependency>
-	 <dependency>
-	  <groupId>org.glassfish.jersey.core</groupId>
-	  <artifactId>jersey-client</artifactId>
-	  <version>2.5.1</version>
-	 </dependency>
-	 <dependency>
-	  <groupId>org.glassfish.jersey.media</groupId>
-	  <artifactId>jersey-media-moxy</artifactId>
-	  <version>2.5.1</version>
-	 </dependency>
 	</dependencies>
 </project>
