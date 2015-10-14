@@ -3219,15 +3219,15 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 
 jQuery(function($){
 	if (Modernizr.touch && Modernizr.inputtypes.date) {
-		$.each(	$(\"input[data-isdate=true]\"), function(index, item) {
+		$.each(	$(''input[data-isdate=true]''), function(index, item) {
 			item.type = ''date'';
 		});
 	} else {
-		$.datepicker.setDefaults( $.datepicker.regional[ \"${currentLangVar}\" ] );
-		$(\"input[data-isdate=true]\").datepicker({
+		$.datepicker.setDefaults( $.datepicker.regional[''${currentLangVar}''] );
+		$(''input[data-isdate=true]'').datepicker({
       			changeMonth: true,
       			changeYear: true,
-      			dateFormat: \"yy-mm-dd\"
+      			dateFormat: ''yy-mm-dd''
     		});
 	}
 });" >
@@ -4165,41 +4165,40 @@ name="%{#attributeTracer.getFormFieldName(#attribute)}"
 value="%{#dateAttributeValue}" maxlength="10" cssClass="text userprofile-date" />
 &#32;
 <#assign js_for_datepicker="jQuery(function($){
-$.datepicker.regional[''''it''''] = {
-closeText: ''''Chiudi'''',
-prevText: ''''&#x3c;Prec'''',
-nextText: ''''Succ&#x3e;'''',
-currentText: ''''Oggi'''',
-monthNames: [''''Gennaio'''',''''Febbraio'''',''''Marzo'''',''''Aprile'''',''''Maggio'''',''''Giugno'''',
-''''Luglio'''',''''Agosto'''',''''Settembre'''',''''Ottobre'''',''''Novembre'''',''''Dicembre''''],
-monthNamesShort:  [''''Gen'''',''''Feb'''',''''Mar'''',''''Apr'''',''''Mag'''',''''Giu'''',
-''''Lug'''',''''Ago'''',''''Set'''',''''Ott'''',''''Nov'''',''''Dic''''],
-dayNames: [''''Domenica'''',''''Luned&#236'''',''''Marted&#236'''',''''Mercoled&#236'''',''''Gioved&#236'''',''''Venerd&#236'''',''''Sabato''''],
-dayNamesShort: [''''Dom'''',''''Lun'''',''''Mar'''',''''Mer'''',''''Gio'''',''''Ven'''',''''Sab''''],
-dayNamesMin: [''''Do'''',''''Lu'''',''''Ma'''',''''Me'''',''''Gi'''',''''Ve'''',''''Sa''''],
-weekHeader: ''''Sm'''',
-dateFormat: ''''dd/mm/yy'''',
-firstDay: 1,
-isRTL: false,
-showMonthAfterYear: false,
-yearSuffix: ''''''''};
+	$.datepicker.regional[''it''] = {
+		closeText: ''Chiudi'',
+		prevText: ''&#x3c;Prec'',
+		nextText: ''Succ&#x3e;'',
+		currentText: ''Oggi'',
+		monthNames: [''Gennaio'',''Febbraio'',''Marzo'',''Aprile'',''Maggio'',''Giugno'',
+			''Luglio'',''Agosto'',''Settembre'',''Ottobre'',''Novembre'',''Dicembre''],
+		monthNamesShort: [''Gen'',''Feb'',''Mar'',''Apr'',''Mag'',''Giu'',
+			''Lug'',''Ago'',''Set'',''Ott'',''Nov'',''Dic''],
+		dayNames: [''Domenica'',''Luned&#236'',''Marted&#236'',''Mercoled&#236'',''Gioved&#236'',''Venerd&#236'',''Sabato''],
+		dayNamesShort: [''Dom'',''Lun'',''Mar'',''Mer'',''Gio'',''Ven'',''Sab''],
+		dayNamesMin: [''Do'',''Lu'',''Ma'',''Me'',''Gi'',''Ve'',''Sa''],
+		weekHeader: ''Sm'',
+		dateFormat: ''dd/mm/yy'',
+		firstDay: 1,
+		isRTL: false,
+		showMonthAfterYear: false,
+		yearSuffix: ''''};
 });
 
-jQuery(function($) {
-if (Modernizr.touch && Modernizr.inputtypes.date) {
-$.each( $(\"input.userprofile-date\"), function(index, item) {
-item.type = ''''date'''';
-});
-} else {
-$.datepicker.setDefaults( $.datepicker.regional[ \"${currentLangVar}\" ] );
-$(\"input.userprofile-date\").datepicker({
-changeMonth: true,
-changeYear: true,
-dateFormat: \"dd/mm/yy\"
-});
-}
-});
-">
+jQuery(function($){
+	if (Modernizr.touch && Modernizr.inputtypes.date) {
+		$.each(	$(''input.userprofile-date''), function(index, item) {
+			item.type = ''date'';
+		});
+	} else {
+		$.datepicker.setDefaults( $.datepicker.regional[''${currentLangVar}''] );
+		$(''input.userprofile-date'').datepicker({
+      			changeMonth: true,
+      			changeYear: true,
+      			dateFormat: ''dd/mm/yy''
+    		});
+	}
+});" >
 
 <@wp.headInfo type="JS" info="entando-misc-html5-essentials/modernizr-2.5.3-full.js" />
 <@wp.headInfo type="JS_EXT" info="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js" />
