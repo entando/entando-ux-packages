@@ -206,7 +206,7 @@
 							<artifactItems>
 								<artifactItem>
 									<groupId>org.entando.entando</groupId>
-									<artifactId>entando-core-webapp</artifactId>
+									<artifactId>entando-admin-console</artifactId>
 									<type>war</type>
 									<outputDirectory>src/main/webapp</outputDirectory>
 									<overWrite>false</overWrite>
@@ -262,45 +262,132 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>copy-resources-webxml</id>
+						<id>copy-resources-conf-jboss</id>
 						<phase>validate</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>src/main/webapp/WEB-INF</outputDirectory>
+							<outputDirectory>src/main/webapp/WEB-INF/conf</outputDirectory>
 							<encoding>UTF-8</encoding>
+							<overwrite>true</overwrite>
 							<resources>
 								<resource>
-									<directory>src/main/config</directory>
+									<directory>src/main/config/${jboss}</directory>
 									<includes>
-										<include>web.xml</include>
+										<include>systemParams.properties</include>
 									</includes>
 									<filtering>true</filtering>
 								</resource>
 							</resources>
 						</configuration>
 					</execution>
+                    <execution>
+                        <id>copy-resources-webxml</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>src/main/webapp/WEB-INF</outputDirectory>
+                            <encoding>UTF-8</encoding>
+                            <overwrite>true</overwrite>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/config</directory>
+                                    <includes>
+                                        <include>web.xml</include>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-resources-webxml-jboss</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>src/main/webapp/WEB-INF</outputDirectory>
+                            <encoding>UTF-8</encoding>
+                            <overwrite>true</overwrite>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/config/${jboss}</directory>
+                                    <includes>
+                                        <include>web.xml</include>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-resources-contextxml</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>src/main/webapp/META-INF</outputDirectory>
+                            <encoding>UTF-8</encoding>
+                            <overwrite>true</overwrite>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/config</directory>
+                                    <includes>
+                                        <include>context.xml</include>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-resources-contextxml-jboss</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>src/main/webapp/META-INF</outputDirectory>
+                            <encoding>UTF-8</encoding>
+                            <overwrite>true</overwrite>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/config/${jboss}</directory>
+                                    <includes>
+                                        <include>context.xml</include>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
 					<execution>
-						<id>copy-resources-contextxml</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>src/main/webapp/META-INF</outputDirectory>
-							<encoding>UTF-8</encoding>
-							<resources>
-								<resource>
-									<directory>src/main/config</directory>
-									<includes>
-										<include>context.xml</include>
-									</includes>
-									<filtering>true</filtering>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
+                        <id>copy-jndi-lookup-jboss</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>src/main/webapp/WEB-INF/classes/spring</outputDirectory>
+                            <encoding>UTF-8</encoding>
+                            <overwrite>true</overwrite>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/config/${jboss}</directory>
+                                    <includes>
+                                        <include>jbossBaseSystemConfig.xml</include>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+					
 					<execution>
 						<id>copy-resources-jettycontextxml</id>
 						<phase>validate</phase>
@@ -472,7 +559,7 @@
 						<version>9.1-901.jdbc4</version>
 					</dependency>
 					<!-- uncomment if you need -->
-					<!-- 
+					<!--
 					<dependency>
 						<groupId>mysql</groupId>
 						<artifactId>mysql-connector-java</artifactId>
@@ -667,8 +754,6 @@
 	</build>
 	<dependencies>
 		
-		
-		
 		<dependency>
 			<groupId>org.entando.entando</groupId>
 			<artifactId>entando-engine</artifactId>
@@ -704,8 +789,6 @@
 			<type>test-jar</type>
 			<scope>test</scope>
 		</dependency>
-		
-		
 		
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
@@ -749,20 +832,5 @@
 			<version>4.8.2</version>
 			<scope>test</scope>
 		</dependency>
-	 <dependency>
-	  <groupId>org.glassfish.jersey.containers</groupId>
-	  <artifactId>jersey-container-servlet</artifactId>
-	  <version>2.5.1</version>
-	 </dependency>
-	 <dependency>
-	  <groupId>org.glassfish.jersey.core</groupId>
-	  <artifactId>jersey-client</artifactId>
-	  <version>2.5.1</version>
-	 </dependency>
-	 <dependency>
-	  <groupId>org.glassfish.jersey.media</groupId>
-	  <artifactId>jersey-media-moxy</artifactId>
-	  <version>2.5.1</version>
-	 </dependency>
 	</dependencies>
 </project>
