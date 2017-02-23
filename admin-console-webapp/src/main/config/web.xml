@@ -39,13 +39,13 @@
 		<url-pattern>/struts/*</url-pattern>
 	</filter-mapping>
     <listener>
-        <listener-class>com.agiletec.apsadmin.system.tiles.JapsStrutsTilesListener</listener-class>
+        <listener-class>org.entando.entando.apsadmin.system.tiles.EntandoStrutsTilesListener</listener-class>
     </listener>
     <listener>
         <listener-class>org.entando.entando.aps.servlet.StartupListener</listener-class>
     </listener>
     <listener>
-        <listener-class>com.agiletec.apsadmin.system.resource.JapsPluginLabelListener</listener-class>
+        <listener-class>org.entando.entando.apsadmin.system.resource.EntandoPluginLabelListener</listener-class>
     </listener>
 	<listener>
 		<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
@@ -59,7 +59,7 @@
 	-->
     <servlet>
         <servlet-name>ResourceControllerServlet</servlet-name>
-        <servlet-class>com.agiletec.plugins.jacms.aps.servlet.ResourceWardenServlet</servlet-class>
+        <servlet-class>org.entando.entando.aps.servlet.ProtectedResourceWardenServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet>
