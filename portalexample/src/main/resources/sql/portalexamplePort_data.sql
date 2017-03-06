@@ -754,6 +754,8 @@ INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ESLF_USER_STA
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ESLF_USER_STATUS_EXPIRED', 'it', 'Credenziali scadute!');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ESLF_USER_STATUS_CREDENTIALS_INVALID', 'en', 'Wrong username or password!');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ESLF_USER_STATUS_CREDENTIALS_INVALID', 'it', 'Le credenziali non sono corrette!');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ESLF_PROFILE_CONFIGURATION', 'en', 'Edit profile');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ESLF_PROFILE_CONFIGURATION', 'it', 'Modifica profilo');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ESLF_USERNAME', 'en', 'Username');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ESLF_USERNAME', 'it', 'Utente');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ESLF_PASSWORD', 'en', 'Password');
@@ -821,13 +823,23 @@ INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_CREATION
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_CARDS_LIST', 'en', 'Back to the list');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_CARDS_LIST', 'it', 'Torna alla lista');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('RESERVED_AREA', 'en', 'Please sign in');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('RESERVED_AREA', 'it', 'È necessario autenticarsi');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('RESERVED_AREA', 'it', '� necessario autenticarsi');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USERNAME', 'en', 'Username');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USERNAME', 'it', 'Utente');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PASSWORD', 'en', 'Password');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PASSWORD', 'it', 'Password');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SIGNIN', 'en', 'Sign in');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SIGNIN', 'it', 'Entra');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('WELCOME', 'en', 'Welcome');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('WELCOME', 'it', 'Benvenuto');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_CREATION', 'en', 'Creation date');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_CREATION', 'it', 'Data creazione');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_ACCESS_LAST', 'en', 'Last access');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_ACCESS_LAST', 'it', 'Ultimo accesso');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_PASSWORD_CHANGE_LAST', 'en', 'Last change');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_PASSWORD_CHANGE_LAST', 'it', 'Ultimo cambio password');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGOUT', 'en', 'Logout');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGOUT', 'it', 'Logout');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_NOT_FOUND', 'en', 'Error 404: Page not found.<br />You could try that sporty search form up there in the navigation bar.');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_NOT_FOUND', 'it', 'Error 404: Pagina non trovata.<br />Prova a usare il form di ricerca lassù nella barra di navigazione.');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GENERIC_ERROR', 'en', '500: Generic Error.<br />
@@ -3949,13 +3961,9 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 	<a class="btn btn-primary" href="<@wp.action path="/ExtStr2/do/Front/Api/Resource/list.action" />"><span class="icon-arrow-left icon-white"></span>&#32;<@wp.i18n key="ENTANDO_API_GOTO_LIST" /></a>
 </p>
 </div>', 1);
-INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('login_form', 'login_form', NULL, NULL, '
-<#assign wp=JspTaglibs["/aps-core"]>
-
+INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('login_form', 'login_form', NULL, NULL, '<#assign wp=JspTaglibs["/aps-core"]>
 <h1><@wp.i18n key="RESERVED_AREA" /></h1>
-
 <#if (Session.currentUser.username != "guest") >
-	
 	<p><@wp.i18n key="WELCOME" />, <em>${Session.currentUser}</em>!</p>
 	<#if (Session.currentUser.entandoUser) >
 	<table class="table table-condensed">
@@ -3965,9 +3973,9 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			<th><@wp.i18n key="USER_DATE_PASSWORD_CHANGE_LAST" /></th>
 		</tr>
 		<tr>
-			<td>${Session.currentUser.creationDate}</td>
-			<td>${Session.currentUser.lastAccess}</td>
-			<td>${Session.currentUser.lastPasswordChange}</td>
+			<td>${Session.currentUser.creationDate?default("-")}</td>
+			<td>${Session.currentUser.lastAccess?default("-")}</td>
+			<td>${Session.currentUser.lastPasswordChange?default("-")}</td>
 		</tr>
 	</table>
 		<#if (!Session.currentUser.credentialsNotExpired) >
@@ -3983,12 +3991,10 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 	</div>
 	</@wp.ifauthorized>
 	<p class="pull-right"><a href="<@wp.info key="systemParam" paramName="applicationBaseURL" />do/logout.action" class="btn"><@wp.i18n key="LOGOUT" /></a></p>
-	
 	<@wp.pageWithWidget widgetTypeCode="userprofile_editCurrentUser" var="userprofileEditingPageVar" listResult=false />
 	<#if (userprofileEditingPageVar??) >
 	<p><a href="<@wp.url page="${userprofileEditingPageVar.code}" />" ><@wp.i18n key="userprofile_CONFIGURATION" /></a></p>
 	</#if>
-	
 <#else>
 	<#if (accountExpired?? && accountExpired == true) >
 	<div class="alert alert-block alert-error">
@@ -4000,7 +4006,6 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		<p><@wp.i18n key="USER_STATUS_CREDENTIALS_INVALID" /></p>
 	</div>
 	</#if>
-	
 	<form action="<@wp.url/>" method="post" class="form-horizontal margin-medium-top">
 		<#if (RequestParameters.returnUrl??) >
 		<input type="hidden" name="returnUrl" value="${RequestParameters.returnUrl}" />
@@ -4020,7 +4025,6 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			<input type="submit" value="<@wp.i18n key="SIGNIN" />" class="btn btn-primary" />
 		</div>
 	</form>
-	
 </#if>', 1);
 INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, locked) VALUES ('internal_servlet_generic_error', NULL, NULL, NULL, '<#assign wp=JspTaglibs["/aps-core"]>
 <@wp.i18n key="GENERIC_ERROR" />', 1);
