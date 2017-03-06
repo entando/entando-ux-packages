@@ -13,15 +13,17 @@
 			classpath*:spring/apsadmin/**/**.xml 
 			classpath*:spring/plugins/**/aps/**/**.xml 
 			classpath*:spring/plugins/**/apsadmin/**/**.xml 
+			classpath*:spring/portalexample/aps/**/**.xml 
+			classpath*:spring/portalexample/apsadmin/**/**.xml 
 		</param-value>
 	</context-param>
     <context-param>
         <param-name>Struts2Config</param-name>
-        <param-value>struts-default.xml,struts-plugin.xml,struts.xml,entando-struts-plugin.xml,japs-struts-plugin.xml</param-value>
+        <param-value>struts-default.xml,struts-plugin.xml,struts.xml,entando-struts-plugin.xml,japs-struts-plugin.xml,portalexample-struts-plugin.xml</param-value>
     </context-param>
     <context-param>
         <param-name>org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG</param-name>
-        <param-value>/WEB-INF/apsadmin/tiles.xml,/WEB-INF/plugins/**/apsadmin/**tiles.xml</param-value>
+        <param-value>/WEB-INF/apsadmin/tiles.xml,/WEB-INF/plugins/**/apsadmin/**tiles.xml,/WEB-INF/portalexample/apsadmin/portalexample-tiles.xml</param-value>
     </context-param>
 	<context-param>
 		<param-name>contextClass</param-name>
@@ -139,18 +141,6 @@
         <location>/error.jsp</location>
     </error-page>
 	
-	
-	
-    <jsp-config>
-        <taglib>
-            <taglib-uri>/aps-core</taglib-uri>
-            <taglib-location>/WEB-INF/tld/aps-core.tld</taglib-location>
-        </taglib>
-        <taglib>
-            <taglib-uri>/jacms-aps-core</taglib-uri>
-            <taglib-location>/WEB-INF/tld/jacms-aps-core.tld</taglib-location>
-        </taglib>
-    </jsp-config>
     <!-- envs used by jBoss : start -->
     <env-entry>
         <env-entry-name>logName</env-entry-name>
