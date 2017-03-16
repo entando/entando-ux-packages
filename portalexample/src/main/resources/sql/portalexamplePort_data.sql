@@ -3463,7 +3463,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		<h3 class="alert-heading"><@wp.i18n key="ENTANDO_API_ERROR" /></h3>
 		<ul>
 			<@s.iterator value="actionErrors">
-				<li><@s.property escape=false /></li>
+				<li><@s.property escapeHtml=false /></li>
 			</@s.iterator>
 		</ul>
 	</div>
@@ -3587,7 +3587,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		<h3 class="alert-heading"><@wp.i18n key="ENTANDO_API_ERROR" /></h3>
 		<ul>
 			<@s.iterator value="actionMessages">
-				<li><@s.property escape=false /></li>
+				<li><@s.property escapeHtml=false /></li>
 			</@s.iterator>
 		</ul>
 	</div>
@@ -3597,7 +3597,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		<h3 class="alert-heading"><@wp.i18n key="ENTANDO_API_ERROR" /></h3>
 		<ul>
 			<@s.iterator value="actionErrors">
-				<li><@s.property escape=false /></li>
+				<li><@s.property escapeHtml=false /></li>
 			</@s.iterator>
 		</ul>
 	</div>
@@ -3758,7 +3758,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		<h3 class="alert-heading"><@s.text name="message.title.ActionErrors" /></h3>
 		<ul>
 			<@s.iterator value="actionErrors">
-				<li><@s.property escape=false /></li>
+				<li><@s.property escapeHtml=false /></li>
 			</@s.iterator>
 		</ul>
 	</div>
@@ -3769,7 +3769,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		<ul>
 			<@s.iterator value="fieldErrors">
 				<@s.iterator value="value">
-				<li><@s.property escape=false /></li>
+				<li><@s.property escapeHtml=false /></li>
 				</@s.iterator>
 			</@s.iterator>
 		</ul>
@@ -3780,7 +3780,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		<h3 class="alert-heading"><@s.text name="messages.confirm" /></h3>
 		<ul>
 			<@s.iterator value="actionMessages">
-				<li><@s.property escape=false /></li>
+				<li><@s.property escapeHtml=false /></li>
 			</@s.iterator>
 		</ul>
 	</div>
@@ -3862,7 +3862,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		<h3><@wp.i18n key="ENTANDO_API_ERROR" /></h3>
 		<ul>
 			<@s.iterator value="actionMessages">
-				<li><@s.property escape=false /></li>
+				<li><@s.property escapeHtml=false /></li>
 			</@s.iterator>
 		</ul>
 	</div>
@@ -3872,7 +3872,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 		<h3><@wp.i18n key="ENTANDO_API_ERROR" /></h3>
 		<ul>
 			<@s.iterator value="actionErrors">
-				<li><@s.property escape=false /></li>
+				<li><@s.property escapeHtml=false /></li>
 			</@s.iterator>
 		</ul>
 	</div>
@@ -4114,14 +4114,14 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			<ul class="unstyled">
 				<@s.iterator value="fieldErrors">
 					<@s.iterator value="value">
-						<li><@s.property escape=false /></li>
+						<li><@s.property escapeHtml=false /></li>
 					</@s.iterator>
 				</@s.iterator>
 			</ul>
 		</div>
 	</@s.if>
 	<@s.set name="lang" value="defaultLang" />
-	<@s.iterator value="userProfile.attributeList" id="attribute">
+	<@s.iterator value="userProfile.attributeList" var="attribute">
 		<@s.if test="%{#attribute.active}">
 			<@wpsa.tracerFactory var="attributeTracer" lang="%{#lang.code}" />
 				<@s.set var="i18n_attribute_name">userprofile_<@s.property value="userProfile.typeCode" />_<@s.property value="#attribute.name" /></@s.set>
@@ -4591,7 +4591,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			<ul class="unstyled">
 				<@s.iterator value="fieldErrors">
 					<@s.iterator value="value">
-						<li><@s.property escape=false /></li>
+						<li><@s.property escapeHtml=false /></li>
 					</@s.iterator>
 				</@s.iterator>
 			</ul>
@@ -4755,14 +4755,14 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 			<ul class="unstyled">
 				<@s.iterator value="fieldErrors">
 					<@s.iterator value="value">
-						<li><@s.property escape=false /></li>
+						<li><@s.property escapeHtml=false /></li>
 					</@s.iterator>
 				</@s.iterator>
 			</ul>
 		</div>
 	</@s.if>
 	<@s.set name="lang" value="defaultLang" />
-	<@s.iterator value="userProfile.attributeList" id="attribute">
+	<@s.iterator value="userProfile.attributeList" var="attribute">
 		<@s.if test="%{#attribute.active}">
 			<@wpsa.tracerFactory var="attributeTracer" lang="%{#lang.code}" />
 			<@s.set var="i18n_attribute_name">userprofile_<@s.property value="userProfile.typeCode" />_<@s.property value="#attribute.name" /></@s.set>

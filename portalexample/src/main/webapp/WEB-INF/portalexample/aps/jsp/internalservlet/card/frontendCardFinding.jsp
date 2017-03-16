@@ -35,7 +35,7 @@ optional CSS
 </tr>
 </thead>
 <tbody>
-<s:iterator id="card">
+<s:iterator var="card">
 <tr>
 	<td><a href="<wp:action path="/ExtStr2/do/FrontEnd/Card/view.action"><wp:parameter name="id"><s:property value="#card.id" /></wp:parameter></wp:action>" title="<wp:i18n key="EDIT" />: <s:property value="#card.id" />" class="label label-info"><s:property value="#card.holder" /></a></td>
 	<td><s:property value="#card.descr" /></td>

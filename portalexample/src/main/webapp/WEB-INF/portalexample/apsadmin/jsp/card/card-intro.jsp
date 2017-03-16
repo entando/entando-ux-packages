@@ -9,7 +9,7 @@
 
 <div id="main" role="main">
 	<div class="intro CARD">
-		<s:property value="%{getText('card.intro.html')}" escape="false"  />
+		<s:property value="%{getText('card.intro.html')}" escapeHtml="false"  />
 	</div>
 </div>
 --%>
