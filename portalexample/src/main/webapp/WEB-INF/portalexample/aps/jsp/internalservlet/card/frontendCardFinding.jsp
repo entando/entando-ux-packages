@@ -14,12 +14,12 @@ optional CSS
 
 <form action="<wp:action path="/ExtStr2/do/FrontEnd/Card/search.action" />" method="post" class="form-search" role="search">
 	<wpsf:textfield name="holder" id="holder" cssClass="input-medium search-query" />
-	<s:set name="searchLabel"><wp:i18n key="SEARCH" /></s:set>
+	<s:set var="searchLabel"><wp:i18n key="SEARCH" /></s:set>
 	<wpsf:submit value="%{#searchLabel}" cssClass="btn btn-primary" />
 </fieldset>
 
 <wpsa:subset source="cards" count="10" objectName="groupCard" advanced="true" offset="5">
-<s:set name="group" value="#groupCard" />
+<s:set var="group" value="#groupCard" />
 
 <div class="margin-medium-vertical">
 	<s:include value="/WEB-INF/apsadmin/jsp/common/inc/pagerInfo.jsp" />
