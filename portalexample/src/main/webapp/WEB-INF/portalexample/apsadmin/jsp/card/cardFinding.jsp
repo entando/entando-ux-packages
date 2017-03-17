@@ -29,7 +29,7 @@
 			&#32;<s:text name="label.new" />
 		</a>
 		<wpsa:subset source="cards" count="10" objectName="cardsGroup" advanced="true" offset="5">
-			<s:set name="group" value="#cardsGroup" />
+			<s:set var="group" value="#cardsGroup" />
 			<div class="text-center">
 				<s:include value="/WEB-INF/apsadmin/jsp/common/inc/pagerInfo.jsp" />
 				<s:include value="/WEB-INF/apsadmin/jsp/common/inc/pager_formBlock.jsp" />
