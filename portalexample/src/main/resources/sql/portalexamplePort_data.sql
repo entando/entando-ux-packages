@@ -2955,7 +2955,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 </tr>
 </thead>
 <tbody>
-<@s.iterator id="card">
+<@s.iterator var="card">
 <tr>
 	<td><a href="<@wp.action path="/ExtStr2/do/FrontEnd/Card/view.action"><@wp.parameter name="id"><@s.property value="#card.id" /></@wp.parameter></@wp.action>" title="<@wp.i18n key="EDIT" />: <@s.property value="#card.id" />" class="label label-info"><@s.property value="#card.holder" /></a></td>
 	<td><@s.property value="#card.descr" /></td>
@@ -3034,7 +3034,7 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 	</li>
 
 	<@s.subset source="#group.items" count="#group.endItemAnchor-#group.beginItemAnchor+1" start="#group.beginItemAnchor-1">
-		<@s.iterator id="item">
+		<@s.iterator var="item">
 			<li>
 				<@wpsf.submit name="%{#pagerIdMarker + ''_'' + #item}" type="button" disabled="%{#item == #group.currItem}">
 					<@s.property value="%{#item}" />
