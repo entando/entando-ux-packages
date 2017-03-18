@@ -690,7 +690,7 @@ INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_M
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_OK', 'en', 'Available');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTHORIZATION', 'it', 'Autorizzazione');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTHORIZATION', 'en', 'Authorization');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_FREE', 'it', 'Nessuna, questo metodo Ã¨ pubblico');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_FREE', 'it', 'Nessuna, questo metodo è pubblico');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_FREE', 'en', 'None, this method is public');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_WITH_PERM', 'it', 'Utenti registrati con permesso');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_WITH_PERM', 'en', 'Registered users with permission');
@@ -702,7 +702,7 @@ INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_M
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_REQ', 'en', 'Request');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_RESP', 'it', 'Risposta');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_RESP', 'en', 'Response');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_PARAMS_SUMM', 'it', 'Questa tabella mostra i parametri per la richiesta del metodo. Per ciascuno di essi ci sono tre colonne: il nome del parametro, la descrizione del parametro e l''indicazione di obbligatorietÃ .');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_PARAMS_SUMM', 'it', 'Questa tabella mostra i parametri per la richiesta del metodo. Per ciascuno di essi ci sono tre colonne: il nome del parametro, la descrizione del parametro e l''indicazione di obbligatorietà.');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_PARAMS_SUMM', 'en', 'This table shows the request parameters for this method. For each of them there are three columns: the parameter name, the parameter description and whether if it''s mandatory or not.');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_REQUEST_PARAMS', 'it', 'Parametri');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_REQUEST_PARAMS', 'en', 'Parameters');
@@ -823,7 +823,7 @@ INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_CREATION
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_CARDS_LIST', 'en', 'Back to the list');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_CARDS_LIST', 'it', 'Torna alla lista');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('RESERVED_AREA', 'en', 'Please sign in');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('RESERVED_AREA', 'it', 'È necessario autenticarsi');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('RESERVED_AREA', 'it', '? necessario autenticarsi');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USERNAME', 'en', 'Username');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USERNAME', 'it', 'Utente');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PASSWORD', 'en', 'Password');
@@ -841,7 +841,7 @@ INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_PAS
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGOUT', 'en', 'Logout');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGOUT', 'it', 'Logout');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_NOT_FOUND', 'en', 'Error 404: Page not found.<br />You could try that sporty search form up there in the navigation bar.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_NOT_FOUND', 'it', 'Error 404: Pagina non trovata.<br />Prova a usare il form di ricerca lassÃ¹ nella barra di navigazione.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_NOT_FOUND', 'it', 'Error 404: Pagina non trovata.<br />Prova a usare il form di ricerca lassù nella barra di navigazione.');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GENERIC_ERROR', 'en', '500: Generic Error.<br />
 This wasn''t supposed to happen. Try again in a few minutes.');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GENERIC_ERROR', 'it', '500: Errore Generico.<br />
@@ -851,7 +851,7 @@ INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_G
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_SERVICE', 'en', 'Service');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_SERVICE', 'it', 'Servizio');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_NO_SERVICES', 'en', 'No API Services available.<br />The system administrator is able to create new API Services.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_NO_SERVICES', 'it', 'Non Ã¨ disponibile alcun Servizio API.<br />L''amministratore di sistema puÃ² crearne.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_NO_SERVICES', 'it', 'Non è disponibile alcun Servizio API.<br />L''amministratore di sistema può crearne.');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGER_PREV', 'en', 'Previous');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGER_PREV', 'it', 'Indietro');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGER_NEXT', 'en', 'Next');
@@ -877,7 +877,7 @@ INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ERRORS', 'it'
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_FIELD', 'en', 'The value for field');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_FIELD', 'it', 'Il valore del campo');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_FORMAT', 'en', 'is invalid');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_FORMAT', 'it', 'non Ã¨ corretto');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_FORMAT', 'it', 'non è corretto');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_RANGE', 'en', 'generates an invalid range');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_RANGE', 'it', 'genera un range non valido');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('COPYRIGHT', 'en', 'Copyright &copy; Entando 2015');
@@ -908,7 +908,7 @@ INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('userprofile_N
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('userprofile_NEWPASS', 'en', 'New password');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('userprofile_OLDPASSWORD', 'it', 'Vecchia password');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('userprofile_OLDPASSWORD', 'en', 'Old password');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('userprofile_PASSWORD_UPDATED', 'it', 'La password Ã¨ stata aggiornata correttamente.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('userprofile_PASSWORD_UPDATED', 'it', 'La password è stata aggiornata correttamente.');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('userprofile_PASSWORD_UPDATED', 'en', 'Your password updated successfully.');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('userprofile_PLEASE_LOGIN', 'it', 'E'' necessario effettuare l''accesso');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('userprofile_PLEASE_LOGIN', 'en', 'Please login');
@@ -1098,7 +1098,6 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 </frames>
 
 ', NULL, '<#assign wp=JspTaglibs["/aps-core"]>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1366,7 +1365,6 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 </frames>
 
 ', NULL, '<#assign wp=JspTaglibs["/aps-core"]>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1536,311 +1534,6 @@ INSERT INTO pagemodels (code, descr, frames, plugincode, templategui) VALUES ('e
 </html>');
 
 
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('service', 'homepage', 5, 'service', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="it">Pagine di Servizio</property>
-<property key="en">Service</property>
-</properties>', 'free', 0, NULL);
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('login', 'service', 6, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Sign In</property>
-<property key="it">Autenticazione</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('notfound', 'service', 4, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Page not found</property>
-<property key="it">Pagina non trovata</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('errorpage', 'service', 5, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">System Error</property>
-<property key="it">Errore di Sistema</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('municipality', 'homepage', 2, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Municipality</property>
-<property key="it">Il Comune</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('online_services', 'homepage', 4, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Online Services</property>
-<property key="it">Servizi Online</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('homepage', 'homepage', -1, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Home</property>
-<property key="it">Home</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('announcements', 'informations', 1, 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Announcements</property>
-<property key="it">Bandi</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('resolutions', 'informations', 2, 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Resolutions</property>
-<property key="it">Delibere</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('news', 'informations', 3, 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">News</property>
-<property key="it">Notizie</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('search_result', 'service', 4, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Search Result</property>
-<property key="it">Risultati della Ricerca</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('announcements_read', 'announcements', 1, 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Read the Announcement</property>
-<property key="it">Leggi il Bando</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('resolutions_read', 'resolutions', 1, 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Read the Resolution</property>
-<property key="it">Leggi la Delibera</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('news_read', 'news', 1, 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Read the News</property>
-<property key="it">Leggi la Notizia</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('contents_read', 'service', 5, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Read the Content</property>
-<property key="it">Leggi il Contenuto</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('mayor', 'municipality', 1, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Mayor</property>
-<property key="it">Sindaco</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('council', 'municipality', 2, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Council</property>
-<property key="it">Giunta Comunale</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('municipal_council', 'municipality', 3, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Municipal Council</property>
-<property key="it">Consiglio Comunale</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('statute', 'municipality', 4, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Statute</property>
-<property key="it">Statuto</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('documents', 'online_services', 1, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Documents</property>
-<property key="it">Modulistica</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('download', 'documents', 1, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Download</property>
-<property key="it">Scarica</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('self_certifications', 'online_services', 2, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Self Certifications</property>
-<property key="it">Autocertificazioni</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('old_town_traffic_pass', 'online_services', 3, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Limited Traffic Zone Pass</property>
-<property key="it">Pass ZTL</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('old_town_traffic_pass_intservl', 'old_town_traffic_pass', 1, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Limited Traffic Zone Pass - Internal Servlet</property>
-<property key="it">Pass ZTL - Internal Servlet</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('public_api', 'online_services', 4, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Public API</property>
-<property key="it">API Pubblica</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>true</useextratitles>
-</config>
-
-');
-INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('informations', 'homepage', 3, 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">Info</property>
-<property key="it">Info</property>
-</properties>
-
-', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-</config>
-
-');
 
 
 INSERT INTO widgetcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked, maingroup) VALUES ('entando-widget-navigation_breadcrumbs', '<?xml version="1.0" encoding="UTF-8"?>
@@ -1863,7 +1556,7 @@ INSERT INTO widgetcatalog (code, titles, parameters, plugincode, parenttypecode,
 INSERT INTO widgetcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked, maingroup) VALUES ('entando-widget-navigation_menu', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Navigation - Vertical Menu</property>
-<property key="it">Navigazione - MenÃ¹ Verticale</property>
+<property key="it">Navigazione - Menù Verticale</property>
 </properties>
 
 ', '<config>
@@ -2120,6 +1813,649 @@ INSERT INTO widgetcatalog (code, titles, parameters, plugincode, parenttypecode,
 	<parameter name="linkDescr_{lang}">Link description in lang {lang}</parameter>
 	<action name="rowListViewerConfig" />
 </config>', 'jacms', NULL, NULL, 1, 'free');
+
+
+
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('service', 'homepage', 5, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('login', 'service', 6, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('notfound', 'service', 4, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('errorpage', 'service', 5, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('municipality', 'homepage', 2, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('online_services', 'homepage', 4, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('homepage', 'homepage', -1, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('announcements', 'informations', 1, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('resolutions', 'informations', 2, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('news', 'informations', 3, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('search_result', 'service', 4, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('announcements_read', 'announcements', 1, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('resolutions_read', 'resolutions', 1, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('news_read', 'news', 1, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('contents_read', 'service', 5, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('mayor', 'municipality', 1, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('council', 'municipality', 2, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('municipal_council', 'municipality', 3, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('statute', 'municipality', 4, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('documents', 'online_services', 1, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('download', 'documents', 1, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('self_certifications', 'online_services', 2, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('old_town_traffic_pass', 'online_services', 3, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('old_town_traffic_pass_intservl', 'old_town_traffic_pass', 1, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('public_api', 'online_services', 4, 'free');
+INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('informations', 'homepage', 3, 'free');
+
+
+
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('service', 'service', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="it">Pagine di Servizio</property>
+<property key="en">Service</property>
+</properties>', 0, NULL, NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('login', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Sign In</property>
+<property key="it">Autenticazione</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('notfound', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Page not found</property>
+<property key="it">Pagina non trovata</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('errorpage', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">System Error</property>
+<property key="it">Errore di Sistema</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipality', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Municipality</property>
+<property key="it">Il Comune</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('online_services', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Online Services</property>
+<property key="it">Servizi Online</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('homepage', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Home</property>
+<property key="it">Home</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Announcements</property>
+<property key="it">Bandi</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Resolutions</property>
+<property key="it">Delibere</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">News</property>
+<property key="it">Notizie</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('search_result', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Search Result</property>
+<property key="it">Risultati della Ricerca</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Read the Announcement</property>
+<property key="it">Leggi il Bando</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Read the Resolution</property>
+<property key="it">Leggi la Delibera</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Read the News</property>
+<property key="it">Leggi la Notizia</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('contents_read', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Read the Content</property>
+<property key="it">Leggi il Contenuto</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('mayor', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Mayor</property>
+<property key="it">Sindaco</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('council', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Council</property>
+<property key="it">Giunta Comunale</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipal_council', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Municipal Council</property>
+<property key="it">Consiglio Comunale</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('statute', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Statute</property>
+<property key="it">Statuto</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('documents', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Documents</property>
+<property key="it">Modulistica</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('download', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Download</property>
+<property key="it">Scarica</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('self_certifications', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Self Certifications</property>
+<property key="it">Autocertificazioni</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Limited Traffic Zone Pass</property>
+<property key="it">Pass ZTL</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass_intservl', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Limited Traffic Zone Pass - Internal Servlet</property>
+<property key="it">Pass ZTL - Internal Servlet</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('public_api', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Public API</property>
+<property key="it">API Pubblica</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('informations', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Info</property>
+<property key="it">Info</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>', NULL);
+
+
+
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('service', 'service', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="it">Pagine di Servizio</property>
+<property key="en">Service</property>
+</properties>', 0, NULL, NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('login', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Sign In</property>
+<property key="it">Autenticazione</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('notfound', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Page not found</property>
+<property key="it">Pagina non trovata</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('errorpage', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">System Error</property>
+<property key="it">Errore di Sistema</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipality', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Municipality</property>
+<property key="it">Il Comune</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('online_services', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Online Services</property>
+<property key="it">Servizi Online</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('homepage', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Home</property>
+<property key="it">Home</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Announcements</property>
+<property key="it">Bandi</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Resolutions</property>
+<property key="it">Delibere</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">News</property>
+<property key="it">Notizie</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('search_result', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Search Result</property>
+<property key="it">Risultati della Ricerca</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Read the Announcement</property>
+<property key="it">Leggi il Bando</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Read the Resolution</property>
+<property key="it">Leggi la Delibera</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Read the News</property>
+<property key="it">Leggi la Notizia</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('contents_read', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Read the Content</property>
+<property key="it">Leggi il Contenuto</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('mayor', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Mayor</property>
+<property key="it">Sindaco</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('council', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Council</property>
+<property key="it">Giunta Comunale</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipal_council', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Municipal Council</property>
+<property key="it">Consiglio Comunale</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('statute', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Statute</property>
+<property key="it">Statuto</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('documents', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Documents</property>
+<property key="it">Modulistica</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('download', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Download</property>
+<property key="it">Scarica</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('self_certifications', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Self Certifications</property>
+<property key="it">Autocertificazioni</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Limited Traffic Zone Pass</property>
+<property key="it">Pass ZTL</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass_intservl', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Limited Traffic Zone Pass - Internal Servlet</property>
+<property key="it">Pass ZTL - Internal Servlet</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('public_api', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Public API</property>
+<property key="it">API Pubblica</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>true</useextratitles>
+</config>
+
+', NULL);
+INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('informations', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Info</property>
+<property key="it">Info</property>
+</properties>
+
+', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+', NULL);
 
 
 INSERT INTO widgetconfig (pagecode, framepos, widgetcode, config) VALUES ('news', 0, 'entando-widget-language_choose', NULL);
@@ -2469,6 +2805,357 @@ INSERT INTO widgetconfig (pagecode, framepos, widgetcode, config) VALUES ('old_t
 INSERT INTO widgetconfig (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass', 3, 'entando-widget-login_form', NULL);
 INSERT INTO widgetconfig (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass', 24, 'URP_Public_Relations_Office', NULL);
 INSERT INTO widgetconfig (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass', 15, 'card_list', NULL);
+
+
+
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news', 4, 'entando-widget-navigation_breadcrumbs', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news', 11, 'NWS_Archive', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('homepage', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('homepage', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('homepage', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('homepage', 5, 'content_viewer', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contentId">CNG18</property>
+<property key="modelId">10012</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('homepage', 24, 'URP_Public_Relations_Office', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements', 4, 'entando-widget-navigation_breadcrumbs', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements', 11, 'ANN_Archive', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions', 4, 'entando-widget-navigation_breadcrumbs', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions', 11, 'RSL_Archive', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('homepage', 9, 'RSL_Latest', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('search_result', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('search_result', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('search_result', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('search_result', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('search_result', 7, 'search_result', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements_read', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements_read', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements_read', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements_read', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements_read', 4, 'entando-widget-navigation_breadcrumbs', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements_read', 5, 'entando-widget-navigation_menu', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements_read', 11, 'content_viewer', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions_read', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions_read', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions_read', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions_read', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions_read', 4, 'entando-widget-navigation_breadcrumbs', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions_read', 5, 'entando-widget-navigation_menu', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions_read', 11, 'content_viewer', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news_read', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news_read', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news_read', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news_read', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news_read', 4, 'entando-widget-navigation_breadcrumbs', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news_read', 5, 'entando-widget-navigation_menu', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news_read', 11, 'content_viewer', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('contents_read', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('contents_read', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('contents_read', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('contents_read', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('contents_read', 5, 'content_viewer', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('mayor', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('mayor', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('mayor', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('mayor', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('mayor', 24, 'URP_Public_Relations_Office', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('council', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('mayor', 7, 'content_viewer', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contentId">CNG41</property>
+<property key="modelId">10014</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('council', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('council', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('council', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('council', 24, 'URP_Public_Relations_Office', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('council', 7, 'content_viewer', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contentId">CNG43</property>
+<property key="modelId">10001</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('municipal_council', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass', 7, 'content_viewer', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contentId">CNG55</property>
+<property key="modelId">10001</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass_intservl', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass_intservl', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass_intservl', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass_intservl', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass_intservl', 24, 'URP_Public_Relations_Office', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass_intservl', 15, 'card_list_detail', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass_intservl', 7, 'content_viewer', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contentId">CNG56</property>
+<property key="modelId">10001</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('login', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('login', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('login', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('login', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('login', 7, 'login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('notfound', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('notfound', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('notfound', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('notfound', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('notfound', 7, 'messages_system', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('errorpage', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('errorpage', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('errorpage', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('errorpage', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('errorpage', 7, 'messages_system', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('public_api', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('public_api', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('public_api', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('public_api', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('homepage', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('homepage', 10, 'NWS_Latest', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('homepage', 8, 'ANN_Latest', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('public_api', 16, 'entando_apis', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('public_api', 15, 'content_viewer', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contentId">CNG72</property>
+<property key="modelId">10001</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('statute', 7, 'content_viewer', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contentId">CNG46</property>
+<property key="modelId">10014</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('municipal_council', 7, 'content_viewer', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contentId">CNG44</property>
+<property key="modelId">10014</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('municipal_council', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('municipal_council', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('municipal_council', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('municipal_council', 24, 'URP_Public_Relations_Office', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('statute', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('statute', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('statute', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('statute', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('statute', 24, 'URP_Public_Relations_Office', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('news', 5, 'entando-widget-navigation_menu', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(informations).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('announcements', 5, 'entando-widget-navigation_menu', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(informations).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('resolutions', 5, 'entando-widget-navigation_menu', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(informations).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('documents', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('documents', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('documents', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('documents', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('documents', 24, 'URP_Public_Relations_Office', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('download', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('download', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('download', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('download', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('download', 7, 'content_viewer', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('documents', 7, 'content_viewer_list', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="maxElemForItem">15</property>
+<property key="title_it">Documenti</property>
+<property key="categories">documents</property>
+<property key="filters">(order=ASC;attributeFilter=true;key=Title)</property>
+<property key="title_en">Documents</property>
+<property key="contentType">DLD</property>
+<property key="modelId">10031</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('self_certifications', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('self_certifications', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('self_certifications', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('self_certifications', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('self_certifications', 24, 'URP_Public_Relations_Office', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('self_certifications', 7, 'content_viewer_list', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="maxElemForItem">15</property>
+<property key="title_it">Autocertificazioni</property>
+<property key="categories">selcf_certifications</property>
+<property key="filters">(order=ASC;attributeFilter=true;key=Title)</property>
+<property key="title_en">Self Certifications</property>
+<property key="contentType">DLD</property>
+<property key="modelId">10031</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass', 0, 'entando-widget-language_choose', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass', 1, 'entando-widget-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="navSpec">code(homepage) + code(municipality).subtree(1) + code(informations).subtree(1) + code(online_services).subtree(1)</property>
+</properties>
+
+');
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass', 2, 'entando-widget-search_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass', 3, 'entando-widget-login_form', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass', 24, 'URP_Public_Relations_Office', NULL);
+INSERT INTO widgetconfig_draft (pagecode, framepos, widgetcode, config) VALUES ('old_town_traffic_pass', 15, 'card_list', NULL);
+
 
 
 INSERT INTO uniquekeys (id, keyvalue) VALUES (1, 117);
@@ -2934,12 +3621,12 @@ INSERT INTO guifragment (code, widgettypecode, plugincode, gui, defaultgui, lock
 
 <form action="<@wp.action path="/ExtStr2/do/FrontEnd/Card/search.action" />" method="post" class="form-search" role="search">
 	<@wpsf.textfield name="holder" id="holder" cssClass="input-medium search-query" />
-	<@s.set var="searchLabel"><@wp.i18n key="SEARCH" /></@s.set>
+	<@s.set name="searchLabel"><@wp.i18n key="SEARCH" /></@s.set>
 	<@wpsf.submit value="%{#searchLabel}" cssClass="btn btn-primary" />
 </fieldset>
 
 <@wpsa.subset source="cards" count=10 objectName="groupCard" advanced=true offset=5>
-<@s.set var="group" value="#groupCard" />
+<@s.set name="group" value="#groupCard" />
 
 <div class="margin-medium-vertical">
 	<@wp.fragment code="portalexample_card_is_pagerInfo" escapeXml=false />
@@ -5139,9 +5826,9 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 ]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="29" lang="en" /><text lang="it">Delibera del Consiglio Comunale numero 20 del 13 Luglio 2012</text><text lang="en">Resolution 20</text></attribute></list></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121018153618</created><lastModified>20130314131336</lastModified></content>
 ', 'free', '2.0', 'admin');
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('CNG8', 'CNG', 'Sample - Hero Unit', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="CNG8" typecode="CNG" typedescr="Generic Content"><descr>Sample - Hero Unit</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Hello, world!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Learn more Â»</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154909</created><lastModified>20121010154909</lastModified></content>
+<content id="CNG8" typecode="CNG" typedescr="Generic Content"><descr>Sample - Hero Unit</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Hello, world!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Learn more »</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154909</created><lastModified>20121010154909</lastModified></content>
 ', '20121010154909', '20121010154909', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="CNG8" typecode="CNG" typedescr="Generic Content"><descr>Sample - Hero Unit</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Hello, world!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Learn more Â»</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154909</created><lastModified>20121010154909</lastModified></content>
+<content id="CNG8" typecode="CNG" typedescr="Generic Content"><descr>Sample - Hero Unit</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Hello, world!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Learn more »</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154909</created><lastModified>20121010154909</lastModified></content>
 ', 'free', '1.0', NULL);
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('CNG9', 'CNG', 'Sample - Lorem Ipsum', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
 <content id="CNG9" typecode="CNG" typedescr="Generic Content"><descr>Sample - Lorem Ipsum</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Heading</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Entando.com</text></attribute><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.org/</urldest></link><text lang="en">Entando.org</text></attribute><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.github.com/entando/</urldest></link><text lang="en">Entando @GitHub</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154909</created><lastModified>20121010154909</lastModified></content>
@@ -5264,13 +5951,13 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 ]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="25" lang="en" /><text lang="it">Delibera del Consiglio Comunale numero 15 del 09 Luglio 2011</text><text lang="en">Resolution 15</text></attribute></list></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121018153131</created><lastModified>20130314131754</lastModified></content>
 ', 'free', '2.0', 'admin');
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('RSL28', 'RSL', 'Resolution 120', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="RSL28" typecode="RSL" typedescr="Resolution"><descr>Resolution 120</descr><groups mainGroup="free" /><categories><category id="resolutions_giunta" /><category id="documents" /></categories><attributes><attribute name="Number" attributetype="Number"><number>120</number></attribute><attribute name="Date" attributetype="Date"><date>20130701</date></attribute><attribute name="Title" attributetype="Longtext"><text lang="it">Organizzazione della manifestazione "Festival della canzone popolareâ€? III Edizione</text><text lang="en">Organization of the event "Folk Music Festival" III Edition</text></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+<content id="RSL28" typecode="RSL" typedescr="Resolution"><descr>Resolution 120</descr><groups mainGroup="free" /><categories><category id="resolutions_giunta" /><category id="documents" /></categories><attributes><attribute name="Number" attributetype="Number"><number>120</number></attribute><attribute name="Date" attributetype="Date"><date>20130701</date></attribute><attribute name="Title" attributetype="Longtext"><text lang="it">Organizzazione della manifestazione "Festival della canzone popolare?? III Edizione</text><text lang="en">Organization of the event "Folk Music Festival" III Edition</text></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Organizzazione della manifestazione &quot;Festival della canzone popolare&rdquo; III Edizione che si terr&agrave; a Villamarina&nbsp; nei mesi di Agosto e Settembre 2013.</p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
 	Organization of the event &quot;Folk Music Festival&quot; III edition to be held in Villamarina in the months of August and September 2013.</p>
 ]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="27" lang="en" /><text lang="it">Delibera della Giunta Comunale numero 120 dell'' 8 Luglio 2013</text><text lang="en">Resolution 120</text></attribute></list></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121018153416</created><lastModified>20130314132121</lastModified></content>
 ', '20121018153416', '20130314132121', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="RSL28" typecode="RSL" typedescr="Resolution"><descr>Resolution 120</descr><groups mainGroup="free" /><categories><category id="resolutions_giunta" /><category id="documents" /></categories><attributes><attribute name="Number" attributetype="Number"><number>120</number></attribute><attribute name="Date" attributetype="Date"><date>20130701</date></attribute><attribute name="Title" attributetype="Longtext"><text lang="it">Organizzazione della manifestazione "Festival della canzone popolareâ€? III Edizione</text><text lang="en">Organization of the event "Folk Music Festival" III Edition</text></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+<content id="RSL28" typecode="RSL" typedescr="Resolution"><descr>Resolution 120</descr><groups mainGroup="free" /><categories><category id="resolutions_giunta" /><category id="documents" /></categories><attributes><attribute name="Number" attributetype="Number"><number>120</number></attribute><attribute name="Date" attributetype="Date"><date>20130701</date></attribute><attribute name="Title" attributetype="Longtext"><text lang="it">Organizzazione della manifestazione "Festival della canzone popolare?? III Edizione</text><text lang="en">Organization of the event "Folk Music Festival" III Edition</text></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Organizzazione della manifestazione &quot;Festival della canzone popolare&rdquo; III Edizione che si terr&agrave; a Villamarina&nbsp; nei mesi di Agosto e Settembre 2013.</p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
 	Organization of the event &quot;Folk Music Festival&quot; III edition to be held in Villamarina in the months of August and September 2013.</p>
@@ -5388,7 +6075,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 ]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Municipal Council</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Municipal Council</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link" /><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>3.0</version><lastEditor>admin</lastEditor><created>20121205171127</created><lastModified>20130314150712</lastModified></content>
 ', 'free', '3.0', 'admin');
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('DLD48', 'DLD', 'Registry - Request Identity Card valid for foreign travel', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="DLD48" typecode="DLD" typedescr="Download Card"><descr>Registry - Request Identity Card valid for foreign travel</descr><groups mainGroup="free" /><categories><category id="documents" /><category id="citizen_registry" /></categories><attributes><attribute name="Title" attributetype="Text"><text lang="it">Anagrafe - Richiesta Carta IdentitÃ  valida per espatrio</text><text lang="en">Registry - Request Identity Card valid for foreign travel</text></attribute><attribute name="File" attributetype="Attach"><resource resourcetype="Attach" id="47" lang="en" /><text lang="it">Modulo richiesta Carta IdentitÃ  valida per espatrio</text><text lang="en">Identity Card Request Form</text></attribute><attribute name="ShortDescr" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+<content id="DLD48" typecode="DLD" typedescr="Download Card"><descr>Registry - Request Identity Card valid for foreign travel</descr><groups mainGroup="free" /><categories><category id="documents" /><category id="citizen_registry" /></categories><attributes><attribute name="Title" attributetype="Text"><text lang="it">Anagrafe - Richiesta Carta Identità valida per espatrio</text><text lang="en">Registry - Request Identity Card valid for foreign travel</text></attribute><attribute name="File" attributetype="Attach"><resource resourcetype="Attach" id="47" lang="en" /><text lang="it">Modulo richiesta Carta Identità valida per espatrio</text><text lang="en">Identity Card Request Form</text></attribute><attribute name="ShortDescr" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Modulo per la richiesta della carta identit&agrave; valida per espatrio.</p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
 	Request Form for identity card valid for foreign travel.</p>
@@ -5398,7 +6085,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 	Request Form for identity card valid for foreign travel.</p>
 ]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /></attributes><status>PUBLIC</status><version>1.0</version><lastEditor>admin</lastEditor><created>20121205180826</created><lastModified>20121205180826</lastModified></content>
 ', '20121205180827', '20121205180827', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="DLD48" typecode="DLD" typedescr="Download Card"><descr>Registry - Request Identity Card valid for foreign travel</descr><groups mainGroup="free" /><categories><category id="documents" /><category id="citizen_registry" /></categories><attributes><attribute name="Title" attributetype="Text"><text lang="it">Anagrafe - Richiesta Carta IdentitÃ  valida per espatrio</text><text lang="en">Registry - Request Identity Card valid for foreign travel</text></attribute><attribute name="File" attributetype="Attach"><resource resourcetype="Attach" id="47" lang="en" /><text lang="it">Modulo richiesta Carta IdentitÃ  valida per espatrio</text><text lang="en">Identity Card Request Form</text></attribute><attribute name="ShortDescr" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+<content id="DLD48" typecode="DLD" typedescr="Download Card"><descr>Registry - Request Identity Card valid for foreign travel</descr><groups mainGroup="free" /><categories><category id="documents" /><category id="citizen_registry" /></categories><attributes><attribute name="Title" attributetype="Text"><text lang="it">Anagrafe - Richiesta Carta Identità valida per espatrio</text><text lang="en">Registry - Request Identity Card valid for foreign travel</text></attribute><attribute name="File" attributetype="Attach"><resource resourcetype="Attach" id="47" lang="en" /><text lang="it">Modulo richiesta Carta Identità valida per espatrio</text><text lang="en">Identity Card Request Form</text></attribute><attribute name="ShortDescr" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
 	Modulo per la richiesta della carta identit&agrave; valida per espatrio.</p>
 ]]></hypertext><hypertext lang="en"><![CDATA[<p>
 	Request Form for identity card valid for foreign travel.</p>
@@ -5737,7 +6424,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 	From now on, mobile devices are welcome here!</p>
 <p>
 	Thanks to the joint powers of <strong>Entando</strong> and <strong>Twitter Bootstrap</strong>.</p>
-]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Links" attributetype="Link"><link type="external"><urldest>http://www.mysite.com/</urldest></link><text lang="en">Learn more Â»</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121018155423</created><lastModified>20130314130809</lastModified></content>
+]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Links" attributetype="Link"><link type="external"><urldest>http://www.mysite.com/</urldest></link><text lang="en">Learn more »</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121018155423</created><lastModified>20130314130809</lastModified></content>
 ', '20121018155423', '20130314130809', '<?xml version="1.0" encoding="UTF-8"?>
 <content id="NWS33" typecode="NWS" typedescr="News"><descr>The portal embraces responsiveness</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Date" attributetype="Date"><date>20130329</date></attribute><attribute name="Title" attributetype="Text"><text lang="en">The portal embraces responsiveness</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
 	From now on, mobile devices are welcome here!</p>
@@ -5745,7 +6432,7 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 	From now on, mobile devices are welcome here!</p>
 <p>
 	Thanks to the joint powers of <strong>Entando</strong> and <strong>Twitter Bootstrap</strong>.</p>
-]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Links" attributetype="Link"><link type="external"><urldest>http://www.mysite.com/</urldest></link><text lang="en">Learn more Â»</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121018155423</created><lastModified>20130314130809</lastModified></content>
+]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Links" attributetype="Link"><link type="external"><urldest>http://www.mysite.com/</urldest></link><text lang="en">Learn more »</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121018155423</created><lastModified>20130314130809</lastModified></content>
 ', 'free', '2.0', 'admin');
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('CNG40', 'CNG', 'Public Relations Office', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
 <content id="CNG40" typecode="CNG" typedescr="Generic Content"><descr>Public Relations Office</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="it">URP - Ufficio Relazioni con il Pubblico</text><text lang="en">Public Relations Office</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
@@ -6080,7 +6767,7 @@ INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, 
 INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD54', 'Title', 'Residence Self Certification Form', NULL, NULL, 'en');
 INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD54', 'Title', 'Modulo Autocertificazione Residenza', NULL, NULL, 'it');
 INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD48', 'Title', 'Registry - Request Identity Card valid for foreign travel', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD48', 'Title', 'Anagrafe - Richiesta Carta IdentitÃ  valida per espatrio', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD48', 'Title', 'Anagrafe - Richiesta Carta Identità valida per espatrio', NULL, NULL, 'it');
 INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD50', 'Title', 'Tax - Request ICI refund', NULL, NULL, 'en');
 INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD50', 'Title', 'Tributi - Richiesta rimborso ICI', NULL, NULL, 'it');
 INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD52', 'Title', 'Civil Status Self Certification Form', NULL, NULL, 'en');
@@ -6239,7 +6926,7 @@ INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numval
 INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD54', 'Title', 'Residence Self Certification Form', NULL, NULL, 'en');
 INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD54', 'Title', 'Modulo Autocertificazione Residenza', NULL, NULL, 'it');
 INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD48', 'Title', 'Registry - Request Identity Card valid for foreign travel', NULL, NULL, 'en');
-INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD48', 'Title', 'Anagrafe - Richiesta Carta IdentitÃ  valida per espatrio', NULL, NULL, 'it');
+INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD48', 'Title', 'Anagrafe - Richiesta Carta Identità valida per espatrio', NULL, NULL, 'it');
 INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD50', 'Title', 'Tax - Request ICI refund', NULL, NULL, 'en');
 INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD50', 'Title', 'Tributi - Richiesta rimborso ICI', NULL, NULL, 'it');
 INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLD52', 'Title', 'Civil Status Self Certification Form', NULL, NULL, 'en');
