@@ -900,7 +900,7 @@
 			<type>test-jar</type>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
@@ -950,5 +950,17 @@
 			<version>3.1.0</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- start entando plugins -->
+
+		<dependency>
+			<artifactId>entando-plugin-jpavatar</artifactId>
+			<groupId>org.entando.entando.plugins</groupId>
+			<version>${entando.version}</version>
+			<type>war</type>
+		</dependency>
+
+		<!-- end entando plugins -->
+
 	</dependencies>
 </project>
