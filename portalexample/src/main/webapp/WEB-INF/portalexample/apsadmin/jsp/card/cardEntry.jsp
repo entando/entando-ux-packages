@@ -15,7 +15,6 @@
         </s:if>
     </li>
 </ol>
-
 <h1 class="page-title-container">
     <s:if test="getStrutsAction() == 1">
         <s:text name="label.add" />

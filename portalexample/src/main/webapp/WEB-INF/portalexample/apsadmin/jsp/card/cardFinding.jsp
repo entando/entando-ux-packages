@@ -6,9 +6,7 @@
     <li><s:text name="breadcrumb.integrations"/></li>
     <li><s:text name="breadcrumb.integrations.components"/></li>
     <li class="page-title-container"><s:text name="title.cardManagement" /></li>
-
 </ol>
-
 <h1 class="page-title-container">
     <s:text name="title.cardManagement" />
     <span class="pull-right">
