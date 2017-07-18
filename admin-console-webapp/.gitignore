@@ -2,3 +2,7 @@ target
 *.log
 .ant-targets-build.xml
 src/main/webapp/WEB-INF/*.tld
+.classpath
+
+*.project*
+.settings/
