@@ -535,6 +535,8 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'enta
 </reports>
 
 ');
+INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'dataTypeDefinitions', 'Definition of the Type Types', '<datatypes />');
+INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'dataobjectsubdir', 'Name of the sub-directory containing dataobject indexing files', 'index');
 
 
 INSERT INTO categories (catcode, parentcode, titles) VALUES ('home', 'home', '<?xml version="1.0" encoding="UTF-8"?>
