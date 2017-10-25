@@ -1,9 +1,0 @@
-#if ($item && $item.size() > 0)
-<ul>
-	#foreach ($card in $item)
-	<li>
-$card.id - $card.holder - $card.descr - $card.date - #if ($card.note) $card.note #end
-	</li>
-	#end
-</ul>
-#end

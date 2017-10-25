@@ -1,1 +1,0 @@
-In questa directory verranno immagazzinati i documenti di tipo immagine inseriti tramite l'interfaccia del cms
