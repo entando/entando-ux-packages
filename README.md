@@ -12,9 +12,7 @@ and other vertical applications extending engine and admin console features.
 * **portalexample**, sample of an Entando web application based on ```engine```, ```admin-console```, ```portal-ui core``` components. 
 It's useful to develop and test vertical applications extending engine, admin console and portal-ui features.
 
-For latest updated news, please visit the company websites: http://www.entando.com.
-
-For any support request, please use [Twitter](https://twitter.com/Entando).
+For latest updated news, please visit the company websites: https://www.entando.com.
 
 Enjoy!
 
