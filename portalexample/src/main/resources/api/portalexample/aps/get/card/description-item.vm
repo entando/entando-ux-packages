@@ -1,7 +1,0 @@
-$item.id \n
-$item.holder \n 
-$item.descr \n
-$item.date \n
-#if ($item.note)
-$item.note \n
-#end
