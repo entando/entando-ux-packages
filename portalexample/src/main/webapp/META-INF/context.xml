@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Context path="/portalexample" docBase="./portalexample" debug="1" reloadable="false">
 	
+	<Environment name="logActiveFileOutput" value="true" type="java.lang.String" override="false" />
 	<Environment name="logName" value="portalexample" type="java.lang.String" override="false" />
 	<Environment name="logFilePrefix" value="C:\\projects\\github\\entando-ux-packages\\portalexample\\target\\log_portalexample" type="java.lang.String" override="false" />
 	<Environment name="logLevel" value="INFO" type="java.lang.String" override="false" />
