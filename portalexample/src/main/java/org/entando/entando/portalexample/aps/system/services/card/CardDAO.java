@@ -178,11 +178,6 @@ public class CardDAO extends AbstractSearcherDAO implements ICardDAO {
 		return "id";
 	}
 	
-	@Override
-	protected boolean isForceCaseInsensitiveLikeSearch() {
-		return true;
-	}
-	
 	private static final String SELECT = 
 			"SELECT id, holder, description, date, note FROM portalexample_cards WHERE id = ?";
 	
