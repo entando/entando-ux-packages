@@ -5,7 +5,7 @@
 	<groupId>org.entando.entando</groupId>
 	<artifactId>admin-console-webapp</artifactId>
 	<packaging>war</packaging>
-	<version>5.0.0</version>
+	<version>5.0.1-SNAPSHOT</version>
 	<name>Entando: Administration Console Webapp</name>
 	<url>http://maven.apache.org/</url>
 	<licenses>
