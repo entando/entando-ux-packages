@@ -1818,41 +1818,41 @@ INSERT INTO widgetcatalog (code, titles, parameters, plugincode, parenttypecode,
 
 
 
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('service', 'homepage', 5, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('login', 'service', 6, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('notfound', 'service', 4, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('errorpage', 'service', 5, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('municipality', 'homepage', 2, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('online_services', 'homepage', 4, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('homepage', 'homepage', -1, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('announcements', 'informations', 1, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('resolutions', 'informations', 2, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('news', 'informations', 3, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('search_result', 'service', 4, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('announcements_read', 'announcements', 1, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('resolutions_read', 'resolutions', 1, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('news_read', 'news', 1, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('contents_read', 'service', 5, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('mayor', 'municipality', 1, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('council', 'municipality', 2, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('municipal_council', 'municipality', 3, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('statute', 'municipality', 4, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('documents', 'online_services', 1, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('download', 'documents', 1, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('self_certifications', 'online_services', 2, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('old_town_traffic_pass', 'online_services', 3, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('old_town_traffic_pass_intservl', 'old_town_traffic_pass', 1, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('public_api', 'online_services', 4, 'free');
-INSERT INTO pages (code, parentcode, pos, groupcode) VALUES ('informations', 'homepage', 3, 'free');
+INSERT INTO pages (code, parentcode, pos) VALUES ('service', 'homepage', 5);
+INSERT INTO pages (code, parentcode, pos) VALUES ('login', 'service', 6);
+INSERT INTO pages (code, parentcode, pos) VALUES ('notfound', 'service', 4);
+INSERT INTO pages (code, parentcode, pos) VALUES ('errorpage', 'service', 5);
+INSERT INTO pages (code, parentcode, pos) VALUES ('municipality', 'homepage', 2);
+INSERT INTO pages (code, parentcode, pos) VALUES ('online_services', 'homepage', 4);
+INSERT INTO pages (code, parentcode, pos) VALUES ('homepage', 'homepage', -1);
+INSERT INTO pages (code, parentcode, pos) VALUES ('announcements', 'informations', 1);
+INSERT INTO pages (code, parentcode, pos) VALUES ('resolutions', 'informations', 2);
+INSERT INTO pages (code, parentcode, pos) VALUES ('news', 'informations', 3);
+INSERT INTO pages (code, parentcode, pos) VALUES ('search_result', 'service', 4);
+INSERT INTO pages (code, parentcode, pos) VALUES ('announcements_read', 'announcements', 1);
+INSERT INTO pages (code, parentcode, pos) VALUES ('resolutions_read', 'resolutions', 1);
+INSERT INTO pages (code, parentcode, pos) VALUES ('news_read', 'news', 1);
+INSERT INTO pages (code, parentcode, pos) VALUES ('contents_read', 'service', 5);
+INSERT INTO pages (code, parentcode, pos) VALUES ('mayor', 'municipality', 1);
+INSERT INTO pages (code, parentcode, pos) VALUES ('council', 'municipality', 2);
+INSERT INTO pages (code, parentcode, pos) VALUES ('municipal_council', 'municipality', 3);
+INSERT INTO pages (code, parentcode, pos) VALUES ('statute', 'municipality', 4);
+INSERT INTO pages (code, parentcode, pos) VALUES ('documents', 'online_services', 1);
+INSERT INTO pages (code, parentcode, pos) VALUES ('download', 'documents', 1);
+INSERT INTO pages (code, parentcode, pos) VALUES ('self_certifications', 'online_services', 2);
+INSERT INTO pages (code, parentcode, pos) VALUES ('old_town_traffic_pass', 'online_services', 3);
+INSERT INTO pages (code, parentcode, pos) VALUES ('old_town_traffic_pass_intservl', 'old_town_traffic_pass', 1);
+INSERT INTO pages (code, parentcode, pos) VALUES ('public_api', 'online_services', 4);
+INSERT INTO pages (code, parentcode, pos) VALUES ('informations', 'homepage', 3);
 
 
 
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('service', 'service', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('service', 'free', 'service', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="it">Pagine di Servizio</property>
 <property key="en">Service</property>
 </properties>', 0, NULL, NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('login', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('login', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Sign In</property>
 <property key="it">Autenticazione</property>
@@ -1864,7 +1864,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('notfound', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('notfound', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Page not found</property>
 <property key="it">Pagina non trovata</property>
@@ -1876,7 +1876,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('errorpage', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('errorpage', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">System Error</property>
 <property key="it">Errore di Sistema</property>
@@ -1888,7 +1888,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipality', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipality', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Municipality</property>
 <property key="it">Il Comune</property>
@@ -1900,7 +1900,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('online_services', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('online_services', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Online Services</property>
 <property key="it">Servizi Online</property>
@@ -1912,7 +1912,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('homepage', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('homepage', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Home</property>
 <property key="it">Home</property>
@@ -1924,7 +1924,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Announcements</property>
 <property key="it">Bandi</property>
@@ -1936,7 +1936,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Resolutions</property>
 <property key="it">Delibere</property>
@@ -1948,7 +1948,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">News</property>
 <property key="it">Notizie</property>
@@ -1960,7 +1960,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('search_result', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('search_result', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Search Result</property>
 <property key="it">Risultati della Ricerca</property>
@@ -1972,7 +1972,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements_read', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Read the Announcement</property>
 <property key="it">Leggi il Bando</property>
@@ -1984,7 +1984,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions_read', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Read the Resolution</property>
 <property key="it">Leggi la Delibera</property>
@@ -1996,7 +1996,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news_read', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Read the News</property>
 <property key="it">Leggi la Notizia</property>
@@ -2008,7 +2008,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('contents_read', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('contents_read', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Read the Content</property>
 <property key="it">Leggi il Contenuto</property>
@@ -2020,7 +2020,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('mayor', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('mayor', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Mayor</property>
 <property key="it">Sindaco</property>
@@ -2032,7 +2032,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('council', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('council', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Council</property>
 <property key="it">Giunta Comunale</property>
@@ -2044,7 +2044,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipal_council', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipal_council', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Municipal Council</property>
 <property key="it">Consiglio Comunale</property>
@@ -2056,7 +2056,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('statute', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('statute', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Statute</property>
 <property key="it">Statuto</property>
@@ -2068,7 +2068,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('documents', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('documents', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Documents</property>
 <property key="it">Modulistica</property>
@@ -2080,7 +2080,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('download', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('download', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Download</property>
 <property key="it">Scarica</property>
@@ -2092,7 +2092,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('self_certifications', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('self_certifications', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Self Certifications</property>
 <property key="it">Autocertificazioni</property>
@@ -2104,7 +2104,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Limited Traffic Zone Pass</property>
 <property key="it">Pass ZTL</property>
@@ -2116,7 +2116,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass_intservl', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass_intservl', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Limited Traffic Zone Pass - Internal Servlet</property>
 <property key="it">Pass ZTL - Internal Servlet</property>
@@ -2128,7 +2128,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('public_api', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('public_api', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Public API</property>
 <property key="it">API Pubblica</property>
@@ -2140,7 +2140,7 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('informations', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_draft (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('informations', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Info</property>
 <property key="it">Info</property>
@@ -2153,12 +2153,12 @@ INSERT INTO pages_metadata_draft (code, modelcode, titles, showinmenu, extraconf
 
 
 
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('service', 'service', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('service', 'free', 'service', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="it">Pagine di Servizio</property>
 <property key="en">Service</property>
 </properties>', 0, NULL, NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('login', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('login', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Sign In</property>
 <property key="it">Autenticazione</property>
@@ -2170,7 +2170,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('notfound', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('notfound', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Page not found</property>
 <property key="it">Pagina non trovata</property>
@@ -2182,7 +2182,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('errorpage', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('errorpage', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">System Error</property>
 <property key="it">Errore di Sistema</property>
@@ -2194,7 +2194,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipality', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipality', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Municipality</property>
 <property key="it">Il Comune</property>
@@ -2206,7 +2206,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('online_services', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('online_services', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Online Services</property>
 <property key="it">Servizi Online</property>
@@ -2218,7 +2218,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('homepage', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('homepage', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Home</property>
 <property key="it">Home</property>
@@ -2230,7 +2230,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Announcements</property>
 <property key="it">Bandi</property>
@@ -2242,7 +2242,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Resolutions</property>
 <property key="it">Delibere</property>
@@ -2254,7 +2254,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">News</property>
 <property key="it">Notizie</property>
@@ -2266,7 +2266,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('search_result', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('search_result', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Search Result</property>
 <property key="it">Risultati della Ricerca</property>
@@ -2278,7 +2278,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('announcements_read', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Read the Announcement</property>
 <property key="it">Leggi il Bando</property>
@@ -2290,7 +2290,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('resolutions_read', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Read the Resolution</property>
 <property key="it">Leggi la Delibera</property>
@@ -2302,7 +2302,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news_read', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('news_read', 'free', 'entando-page-2columns-left', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Read the News</property>
 <property key="it">Leggi la Notizia</property>
@@ -2314,7 +2314,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('contents_read', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('contents_read', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Read the Content</property>
 <property key="it">Leggi il Contenuto</property>
@@ -2326,7 +2326,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('mayor', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('mayor', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Mayor</property>
 <property key="it">Sindaco</property>
@@ -2338,7 +2338,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('council', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('council', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Council</property>
 <property key="it">Giunta Comunale</property>
@@ -2350,7 +2350,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipal_council', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('municipal_council', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Municipal Council</property>
 <property key="it">Consiglio Comunale</property>
@@ -2362,7 +2362,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('statute', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('statute', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Statute</property>
 <property key="it">Statuto</property>
@@ -2374,7 +2374,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('documents', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('documents', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Documents</property>
 <property key="it">Modulistica</property>
@@ -2386,7 +2386,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('download', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('download', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Download</property>
 <property key="it">Scarica</property>
@@ -2398,7 +2398,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('self_certifications', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('self_certifications', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Self Certifications</property>
 <property key="it">Autocertificazioni</property>
@@ -2410,7 +2410,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Limited Traffic Zone Pass</property>
 <property key="it">Pass ZTL</property>
@@ -2422,7 +2422,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass_intservl', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('old_town_traffic_pass_intservl', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Limited Traffic Zone Pass - Internal Servlet</property>
 <property key="it">Pass ZTL - Internal Servlet</property>
@@ -2434,7 +2434,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('public_api', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('public_api', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Public API</property>
 <property key="it">API Pubblica</property>
@@ -2446,7 +2446,7 @@ INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extracon
 </config>
 
 ', NULL);
-INSERT INTO pages_metadata_online (code, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('informations', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
+INSERT INTO pages_metadata_online (code, groupcode, modelcode, titles, showinmenu, extraconfig, updatedat) VALUES ('informations', 'free', 'entando-page-bootstrap-hero', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Info</property>
 <property key="it">Info</property>
