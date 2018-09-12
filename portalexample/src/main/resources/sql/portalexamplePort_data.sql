@@ -21,9 +21,7 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'user
 			</attribute>
 		</attributes>
 	</profiletype>
-</profiletypes>
-
-');
+</profiletypes>');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'imageDimensions', 'Definition of the resized image dimensions', '<Dimensions>
 	<Dimension>
 		<id>1</id>
@@ -40,8 +38,7 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'imag
 		<dimx>150</dimx>
 		<dimy>150</dimy>
 	</Dimension>
-</Dimensions>
-');
+</Dimensions>');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'langs', 'Definition of the system languages', '<?xml version="1.0" encoding="UTF-8"?>
 <Langs>
   <Lang>
@@ -53,9 +50,7 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'lang
     <code>it</code>
     <descr>Italian</descr>
   </Lang>
-</Langs>
-
-');
+</Langs>');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'contentTypes', 'Definition of the Content Types', '<?xml version="1.0" encoding="UTF-8"?>
 <contenttypes>
 	<contenttype typecode="ANN" typedescr="Announcement" viewpage="announcements_read" listmodel="10051" defaultmodel="10005">
@@ -199,9 +194,7 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'cont
 			</list>
 		</attributes>
 	</contenttype>
-</contenttypes>
-
-');
+</contenttypes>');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'params', 'Configuration params.', '<?xml version="1.0" encoding="UTF-8"?>
 <Params>
 	<Param name="urlStyle">breadcrumbs</Param>
@@ -232,14 +225,7 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'para
 		<Param name="maxMonthsSinceLastAccess">6</Param>
 		<Param name="maxMonthsSinceLastPasswordChange">3</Param>
 	</ExtendendPrivacyModule>
-</Params>
-
-');
-INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'license', 'License', '<?xml version="1.0" encoding="UTF-8"?>
-<license>
-  <key></key>
-</license>
-');
+</Params>');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'subIndexDir', 'Name of the sub-directory containing content indexing files', 'indexdir20140703142340');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'entandoComponentsReport', 'The component installation report', '<?xml version="1.0" encoding="UTF-8"?>
 <reports status="OK">
@@ -532,11 +518,17 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'enta
 			<postProcess status="NOT_AVAILABLE" />
 		</component>
 	</components>
-</reports>
-
-');
+</reports>');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'dataTypeDefinitions', 'Definition of the Type Types', '<datatypes />');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'dataobjectsubdir', 'Name of the sub-directory containing dataobject indexing files', 'index');
+INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'jacms_resourceMetadataMapping', 'Mapping between resource Metadata and resource attribute fields', '<mapping>
+    <field key="alt"></field>
+    <field key="description"></field>
+    <field key="legend"></field>
+    <field key="title"></field>
+</mapping>');
+
+
 
 
 INSERT INTO categories (catcode, parentcode, titles) VALUES ('home', 'home', '<?xml version="1.0" encoding="UTF-8"?>
