@@ -16,18 +16,6 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-    <developers>
-        <developer>
-            <id>e.santoboni</id>
-            <name>Eugenio Santoboni</name>
-            <email>eugenio.santoboni@gmail.com</email>
-        </developer>
-        <developer>
-            <id>w.ghelfi</id>
-            <name>William Ghelfi</name>
-            <email>william@williamghelfi.com</email>
-        </developer>
-    </developers>
     <organization>
         <name>Entando Inc.</name>
         <url>http://www.entando.com/</url>
@@ -141,7 +129,6 @@
         <entando.version>5.1.0-SNAPSHOT</entando.version>
         <spring.version>5.0.8.RELEASE</spring.version>
         <struts2.version>2.5.17</struts2.version>
-        <cxf.version>3.1.12</cxf.version>
     </properties>
     <build>
         <finalName>portalexample</finalName>
