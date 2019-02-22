@@ -79,7 +79,7 @@
                 <env.db.environment>develop</env.db.environment>
             </properties>
         </profile>
-		
+
         <!-- Added for jboss -->
         <profile>
             <id>production-jboss</id>
@@ -95,7 +95,23 @@
                 <jboss>jboss</jboss>
             </properties>
         </profile>
-		
+
+        <!-- Added for OpenShift -->
+        <profile>
+            <id>openshift</id>
+            <activation>
+                <property>
+                    <name>env.MAVEN_WORKING_MODE</name>
+                    <value>openshift</value>
+                </property>
+            </activation>
+            <properties>
+                <env>openshift</env>
+                <env.db.environment>production</env.db.environment>
+                <jboss>jboss</jboss>
+            </properties>
+        </profile>
+
     </profiles>
     <properties>
         <!--
@@ -286,26 +302,6 @@
                                     <directory>src/main/config</directory>
                                     <includes>
                                         <include>systemParams.properties</include>
-                                    </includes>
-                                    <filtering>true</filtering>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-resources-security-conf</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>src/main/webapp/WEB-INF/conf</outputDirectory>
-                            <encoding>UTF-8</encoding>
-                            <overwrite>true</overwrite>
-                            <resources>
-                                <resource>
-                                    <directory>src/main/config</directory>
-                                    <includes>
                                         <include>security.properties</include>
                                     </includes>
                                     <filtering>true</filtering>
@@ -439,7 +435,6 @@
                             </resources>
                         </configuration>
                     </execution>
-					
                     <execution>
                         <id>copy-resources-jettycontextxml</id>
                         <phase>validate</phase>
@@ -454,6 +449,7 @@
                                     <directory>src/main/config</directory>
                                     <includes>
                                         <include>jetty-env.xml</include>
+                                        <include>jetty.xml</include>
                                     </includes>
                                     <filtering>true</filtering>
                                 </resource>
@@ -593,6 +589,7 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.4.8.v20180619</version>
                 <configuration>
+                    <jettyXml>${project.build.directory}/jetty/jetty.xml</jettyXml>
                     <scanIntervalSeconds>5</scanIntervalSeconds>
                     <webAppSourceDirectory>${basedir}/src/main/webapp</webAppSourceDirectory>
                     <webApp>
@@ -851,7 +848,7 @@
             <version>${entando.version}</version>
             <type>war</type>
         </dependency>
-		
+
         <dependency>
             <groupId>org.entando.entando</groupId>
             <artifactId>entando-engine</artifactId>
@@ -866,7 +863,7 @@
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
-		
+
         <dependency>
             <groupId>org.entando.entando</groupId>
             <artifactId>entando-admin-console</artifactId>
@@ -887,7 +884,7 @@
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
-		
+
         <dependency>
             <groupId>org.entando.entando</groupId>
             <artifactId>entando-portal-ui</artifactId>
@@ -908,7 +905,7 @@
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
-		
+
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
@@ -921,7 +918,7 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
-		
+        
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
@@ -952,13 +949,19 @@
             <version>4.8.2</version>
             <scope>test</scope>
         </dependency>
-		
+        
         <dependency>
             <groupId>org.entando.entando.plugins</groupId>
             <artifactId>entando-plugin-jpinfinispan</artifactId>
             <version>${entando.version}</version>
             <type>war</type>
         </dependency>
+        <!-- enable if you need to test Oracle DB connection with jetty -->
+        <!--<dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc7</artifactId>
+            <version>12.1.0.2</version>
+        </dependency> -->
 		
         <dependency>
             <groupId>org.entando.entando.bundles.app-view</groupId>
@@ -966,6 +969,6 @@
             <version>${entando.version}</version>
             <type>war</type>
         </dependency>
-		
+        
     </dependencies>
 </project>

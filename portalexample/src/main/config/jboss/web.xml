@@ -14,7 +14,7 @@
             classpath*:spring/aps/**/**.xml
             classpath*:spring/apsadmin/**/**.xml
             classpath*:spring/plugins/**/aps/**/**.xml
-            classpath*:spring/plugins/**/apsadmin/**/**.xml 
+            classpath*:spring/plugins/**/apsadmin/**/**.xml
 			classpath*:spring/portalexample/aps/**/**.xml 
 			classpath*:spring/portalexample/apsadmin/**/**.xml 
         </param-value>
@@ -39,6 +39,18 @@
         <filter-name>XSSFilter</filter-name>
         <filter-class>org.entando.entando.aps.servlet.XSSFilter</filter-class>
     </filter>
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
     <filter-mapping>
         <filter-name>struts2</filter-name>
         <url-pattern>/do/*</url-pattern>
@@ -58,6 +70,10 @@
     <filter-mapping>
         <filter-name>XSSFilter</filter-name>
         <url-pattern>/pages/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <url-pattern>*</url-pattern>
     </filter-mapping>
     <listener>
         <listener-class>org.entando.entando.apsadmin.system.tiles.EntandoStrutsTilesListener</listener-class>
@@ -93,14 +109,7 @@
         <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
-    <servlet>
-        <servlet-name>AuthorizationServlet</servlet-name>
-        <servlet-class>org.entando.entando.aps.servlet.AuthEndpointServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>AccessTokenServlet</servlet-name>
-        <servlet-class>org.entando.entando.aps.servlet.TokenEndpointServlet</servlet-class>
-    </servlet>
+    
     <servlet>
         <servlet-name>springDispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -142,14 +151,7 @@
         <servlet-name>APIServlet</servlet-name>
         <url-pattern>/legacyapi/*</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AuthorizationServlet</servlet-name>
-        <url-pattern>/OAuth2/authorize</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AccessTokenServlet</servlet-name>
-        <url-pattern>/OAuth2/access_token</url-pattern>
-    </servlet-mapping>
+    
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
@@ -250,5 +252,5 @@
         <env-entry-value>${profile.servDataSourceClassName}</env-entry-value>
     </env-entry>
     <!-- envs used by jBoss : end -->
-	
 </web-app>
+

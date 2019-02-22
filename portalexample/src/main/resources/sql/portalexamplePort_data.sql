@@ -232,14 +232,13 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'para
 		<Param name="maxMonthsSinceLastAccess">6</Param>
 		<Param name="maxMonthsSinceLastPasswordChange">3</Param>
 	</ExtendendPrivacyModule>
-</Params>
-
-');
-INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'license', 'License', '<?xml version="1.0" encoding="UTF-8"?>
-<license>
-  <key></key>
-</license>
-');
+</Params>');
+INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'jacms_resourceMetadataMapping', 'Mapping between resource Metadata and resource attribute fields', '<mapping>
+    <field key="alt"></field>
+    <field key="description"></field>
+    <field key="legend"></field>
+    <field key="title"></field>
+</mapping>');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'subIndexDir', 'Name of the sub-directory containing content indexing files', 'indexdir20140703142340');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'entandoComponentsReport', 'The component installation report', '<?xml version="1.0" encoding="UTF-8"?>
 <reports status="OK">
