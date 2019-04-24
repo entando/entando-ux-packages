@@ -5,33 +5,21 @@
     <groupId>org.entando.entando</groupId>
     <artifactId>portalexample</artifactId>
     <packaging>war</packaging>
-    <version>5.0.0</version>
+    <version>5.0.2</version>
     <name>portalexample</name>
-    <description>A Portal Example for Entando</description>
-    <url>http://www.entando.com/</url>
-    <licenses>
-        <license>
-            <name>GNU LESSER GENERAL PUBLIC LICENSE,  Version 2.1, February 1999</name>
-            <url>https://www.gnu.org/licenses/lgpl-2.1.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-    <developers>
-        <developer>
-            <id>e.santoboni</id>
-            <name>Eugenio Santoboni</name>
-            <email>eugenio.santoboni@gmail.com</email>
-        </developer>
-        <developer>
-            <id>w.ghelfi</id>
-            <name>William Ghelfi</name>
-            <email>william@williamghelfi.com</email>
-        </developer>
-    </developers>
-    <organization>
-        <name>Entando Inc.</name>
-        <url>http://www.entando.com/</url>
-    </organization>
+    <url>http://maven.apache.org/</url>
+    <!--
+    <repositories>
+        <repository>
+            <id>snapshot-repository</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+    -->
     <profiles>
         <profile>
             <id>production</id>
@@ -91,7 +79,7 @@
                 <env.db.environment>develop</env.db.environment>
             </properties>
         </profile>
-		
+
         <!-- Added for jboss -->
         <profile>
             <id>production-jboss</id>
@@ -107,7 +95,7 @@
                 <jboss>jboss</jboss>
             </properties>
         </profile>
-		
+
     </profiles>
     <properties>
         <!--
@@ -138,10 +126,9 @@
 
         <skipDerby>true</skipDerby>
         <skipStandalone>true</skipStandalone>
-        <entando.version>5.0.0</entando.version>
-        <spring.version>5.0.5.RELEASE</spring.version>
-        <struts2.version>2.5.10.1</struts2.version>
-        <cxf.version>3.0.4</cxf.version>
+        <entando.version>5.0.2</entando.version>
+        <spring.version>5.0.8.RELEASE</spring.version>
+        <struts2.version>2.5.17</struts2.version>
     </properties>
     <build>
         <finalName>portalexample</finalName>
@@ -299,26 +286,6 @@
                                     <directory>src/main/config</directory>
                                     <includes>
                                         <include>systemParams.properties</include>
-                                    </includes>
-                                    <filtering>true</filtering>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-resources-security-conf</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>src/main/webapp/WEB-INF/conf</outputDirectory>
-                            <encoding>UTF-8</encoding>
-                            <overwrite>true</overwrite>
-                            <resources>
-                                <resource>
-                                    <directory>src/main/config</directory>
-                                    <includes>
                                         <include>security.properties</include>
                                     </includes>
                                     <filtering>true</filtering>
@@ -452,7 +419,6 @@
                             </resources>
                         </configuration>
                     </execution>
-					
                     <execution>
                         <id>copy-resources-jettycontextxml</id>
                         <phase>validate</phase>
@@ -467,6 +433,7 @@
                                     <directory>src/main/config</directory>
                                     <includes>
                                         <include>jetty-env.xml</include>
+                                        <include>jetty.xml</include>
                                     </includes>
                                     <filtering>true</filtering>
                                 </resource>
@@ -604,8 +571,9 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.2.11.v20150529</version>
+                <version>9.4.8.v20180619</version>
                 <configuration>
+                    <jettyXml>${project.build.directory}/jetty/jetty.xml</jettyXml>
                     <scanIntervalSeconds>5</scanIntervalSeconds>
                     <webAppSourceDirectory>${basedir}/src/main/webapp</webAppSourceDirectory>
                     <webApp>
@@ -864,7 +832,7 @@
             <version>${entando.version}</version>
             <type>war</type>
         </dependency>
-		
+
         <dependency>
             <groupId>org.entando.entando</groupId>
             <artifactId>entando-engine</artifactId>
@@ -879,7 +847,7 @@
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
-		
+
         <dependency>
             <groupId>org.entando.entando</groupId>
             <artifactId>entando-admin-console</artifactId>
@@ -900,7 +868,7 @@
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
-		
+
         <dependency>
             <groupId>org.entando.entando</groupId>
             <artifactId>entando-portal-ui</artifactId>
@@ -921,7 +889,7 @@
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
-		
+
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
@@ -934,7 +902,7 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
-		
+        
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
@@ -965,7 +933,7 @@
             <version>4.8.2</version>
             <scope>test</scope>
         </dependency>
-		
+        
         <dependency>
             <groupId>org.entando.entando.plugins</groupId>
             <artifactId>entando-plugin-jpinfinispan</artifactId>
