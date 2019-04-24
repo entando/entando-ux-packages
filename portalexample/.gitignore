@@ -1,5 +1,8 @@
 .classpath
 .settings/
-bin/
-target/
+bin
+target
+.idea
+overlays
+*.iml
 
