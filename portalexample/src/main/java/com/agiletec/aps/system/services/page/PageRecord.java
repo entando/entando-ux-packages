@@ -63,8 +63,19 @@ public class PageRecord {
                         widgetEquals = false;
                         break;
                     }
-                    if (!widgetOnline.getType().getCode().equals(widgetDraft.getType().getCode())
-                            || !widgetOnline.getConfig().equals(widgetDraft.getConfig())) {
+                    if (!widgetOnline.getType().getCode().equals(widgetDraft.getType().getCode())) {
+                        widgetEquals = false;
+                    }
+                    // !widgetOnline.getConfig().equals(widgetDraft.getConfig()
+                    if (null == widgetOnline.getConfig() && null == widgetDraft.getConfig()) {
+                        continue;
+                    }
+                    if ((null != widgetOnline.getConfig() && null == widgetDraft.getConfig())
+                            || (null == widgetOnline.getConfig() && null != widgetDraft.getConfig())) {
+                        widgetEquals = false;
+                        break;
+                    }
+                    if (!widgetOnline.getConfig().equals(widgetDraft.getConfig())) {
                         widgetEquals = false;
                     }
                 }
