@@ -1,7 +1,7 @@
 <project name="admin-console-webapp" default="WAR-build" basedir=".">
 	<description>admin-console-webapp - Build file</description>
-	
+
 	<import file="buildProperties.xml"/>
 	<import file="buildTasks.xml"/>
-	
+
 </project>
