@@ -679,6 +679,13 @@
                             </includes>
                         </resource>
                     </webResources>
+                    <archive>
+                        <manifestEntries>
+                            <Dependencies>org.infinispan, org.infinispan.commons, org.jboss.as.clustering.infinispan
+                                export
+                            </Dependencies>
+                        </manifestEntries>
+                    </archive>
                 </configuration>
             </plugin>
             <plugin>
