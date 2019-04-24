@@ -35,6 +35,19 @@
             </properties>
         </profile>
         <profile>
+            <id>staging-entando</id>
+            <activation>
+                <property>
+                    <name>env.MAVEN_WORKING_MODE</name>
+                    <value>staging-entando</value>
+                </property>
+            </activation>
+            <properties>
+                <env>staging-entando</env>
+                <env.db.environment>production</env.db.environment>
+            </properties>
+        </profile>
+        <profile>
             <id>development-unix</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
