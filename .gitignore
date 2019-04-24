@@ -1,3 +1,7 @@
 */nb-configuration.xml
 */target
 */derby.log
+.idea
+target
+overlays
+*.iml
