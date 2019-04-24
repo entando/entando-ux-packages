@@ -977,25 +977,20 @@
         <!--INFINISPAN-->
         <dependency>
             <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-spring</artifactId>
-            <version>8.2.8.Final</version>
-            <scope>compile</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.infinispan</groupId>
-                    <artifactId>infinispan-core</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.jgroups</groupId>
-                    <artifactId>jgroups</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.jboss.marshalling</groupId>
-                    <artifactId>jboss-marshalling-osgi</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>infinispan-spring5-remote</artifactId>
+            <version>9.4.8.Final</version>
         </dependency>
         <dependency>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-core</artifactId>
+            <version>9.4.8.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-commons</artifactId>
+            <version>9.4.8.Final</version>
+        </dependency>
+        <!--<dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
@@ -1004,6 +999,6 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.25</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 </project>
