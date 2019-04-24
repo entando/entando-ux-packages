@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jee="http://www.springframework.org/schema/jee" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:cache="http://www.springframework.org/schema/cache" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd
+			http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
+			http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-4.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+			http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+    <jee:jndi-lookup id="defaultCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_Cache" />
+    <jee:jndi-lookup id="pageCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_PageManager" />
+    <jee:jndi-lookup id="pageModelCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_PageModelManager" />
+    <jee:jndi-lookup id="categoryCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_CategoryManager" />
+    <jee:jndi-lookup id="widgetTypeCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_WidgetTypeManager" />
+    <jee:jndi-lookup id="configCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_ConfigManager" />
+    <jee:jndi-lookup id="roleCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_RoleManager" />
+    <jee:jndi-lookup id="groupCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_GroupManager" />
+    <jee:jndi-lookup id="langCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_LangManager" />
+    <jee:jndi-lookup id="cacheInfoCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_CacheInfoManager" />
+    <jee:jndi-lookup id="i18lnCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_I18nManager" />
+    <jee:jndi-lookup id="userProfileCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_UserProfileManager" />
+    <jee:jndi-lookup id="initializerCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_InitializerManager" />
+    <jee:jndi-lookup id="apiCatalogCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_ApiCatalogManager" />
+    <jee:jndi-lookup id="keyGeneratorCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_KeyGeneratorManager" />
+    <jee:jndi-lookup id="dataObjectCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_DataObjectManager" />
+    <jee:jndi-lookup id="dataObjectModelCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_DataObjectModelManager" />
+    <jee:jndi-lookup id="dataObjectMapperCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_DataObjectPageMapperManager" />
+    <jee:jndi-lookup id="jacmsContentManagerCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_jacmsContentManager" />
+    <jee:jndi-lookup id="contentModelCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_ContentModelManager" />
+    <jee:jndi-lookup id="contentPageMapperCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_ContentPageMapperManager" />
+    <jee:jndi-lookup id="resourceManagerCache"
+                     jndi-name="java:jboss/infinispan/cache/entando/Entando_ResourceManager" />
+
+    <bean id="springCacheManager" class="org.springframework.cache.support.SimpleCacheManager">
+        <property name="caches">
+            <set>
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_Cache" p:store-ref="defaultCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_PageManager" p:store-ref="pageCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_PageModelManager" p:store-ref="pageModelCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_WidgetTypeManager" p:store-ref="widgetTypeCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_CategoryManager" p:store-ref="categoryCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_ConfigManager" p:store-ref="configCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_RoleManager" p:store-ref="roleCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_GroupManager" p:store-ref="groupCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_LangManager" p:store-ref="langCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_CacheInfoManager" p:store-ref="cacheInfoCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_I18nManager" p:store-ref="i18lnCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_UserProfileManager" p:store-ref="userProfileCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_InitializerManager" p:store-ref="initializerCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_ApiCatalogManager" p:store-ref="apiCatalogCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_KeyGeneratorManager" p:store-ref="keyGeneratorCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_DataObjectManager" p:store-ref="dataObjectCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_DataObjectModelManager" p:store-ref="dataObjectModelCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_DataObjectPageMapperManager" p:store-ref="dataObjectMapperCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_jacmsContentManager" p:store-ref="jacmsContentManagerCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_ContentModelManager" p:store-ref="contentModelCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_ContentPageMapperManager" p:store-ref="contentPageMapperCache" p:allowNullValues="true" />
+                <bean
+                        class="org.entando.entando.aps.system.services.cache.CustomConcurrentMapCacheFactoryBean"
+                        p:name="Entando_ResourceManager" p:store-ref="resourceManagerCache" p:allowNullValues="true" />
+            </set>
+        </property>
+    </bean>
+
+
+</beans>
