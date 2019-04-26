@@ -48,7 +48,6 @@ public class PageRecord {
         if (onlineMeta != null) {
             PageMetadata draftMeta = this.getMetadataDraft();
             if (draftMeta != null) {
-                System.out.println("-------------------- page comparator -> " + this.getCode());
                 boolean widgetEquals = true;
                 for (int i = 0; i < this.getWidgetsDraft().length; i++) {
                     Widget widgetDraft = this.getWidgetsDraft()[i];
@@ -67,7 +66,6 @@ public class PageRecord {
                     if (!widgetOnline.getType().getCode().equals(widgetDraft.getType().getCode())) {
                         widgetEquals = false;
                     }
-                    // !widgetOnline.getConfig().equals(widgetDraft.getConfig()
                     if (null == widgetOnline.getConfig() && null == widgetDraft.getConfig()) {
                         continue;
                     }
@@ -82,10 +80,6 @@ public class PageRecord {
                     }
                 }
                 boolean metaEquals = onlineMeta.hasEqualConfiguration(draftMeta);
-                if (!metaEquals) {
-                    System.out.println("different meta config ");
-                }
-                System.out.println("-------------------------------------------");
                 return !(widgetEquals && metaEquals);
             } else {
                 changed = true;

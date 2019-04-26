@@ -252,72 +252,55 @@ public class PageMetadata implements Cloneable, Serializable {
             return false;
         }
         if (!this.getClass().getName().equals(obj.getClass().getName())) {
-            System.out.println("this.getClass() -> " + this.getClass());
-            System.out.println("obj.getClass() -> " + obj.getClass());
-            System.out.println("different metadata classes");
             return false;
         }
         PageMetadata other = (PageMetadata) obj;
         if (this.charset == null) {
             if (other.charset != null) {
-                System.out.println("different charset 1");
                 return false;
             }
         } else if (!charset.equals(other.charset)) {
-            System.out.println("different charset 2");
             return false;
         }
         if (extraGroups == null) {
             if (other.extraGroups != null) {
-                System.out.println("different groups 1");
                 return false;
             }
         } else if (!extraGroups.equals(other.extraGroups)) {
-            System.out.println("different groups 2");
             return false;
         }
         if (mimeType == null) {
             if (other.mimeType != null) {
-                System.out.println("different mimetype 1");
                 return false;
             }
         } else if (!mimeType.equals(other.mimeType)) {
-            System.out.println("different mimetype 2");
             return false;
         }
         if (group == null) {
             if (other.group != null) {
-                System.out.println("different group 1");
                 return false;
             }
         } else if (!group.equals(other.group)) {
-            System.out.println("different group 2");
             return false;
         }
         if (model == null) {
             if (other.model != null) {
-                System.out.println("different model 1");
                 return false;
             }
         } else if (!model.getCode().equals(other.model.getCode())) {
-            System.out.println("different model2");
             return false;
         }
         if (showable != other.showable) {
-            System.out.println("different shoable 1");
             return false;
         }
         if (titles == null) {
             if (other.titles != null) {
-                System.out.println("different titlse 1");
                 return false;
             }
         } else if (!titles.equals(other.titles)) {
-            System.out.println("different title 2");
             return false;
         }
         if (useExtraTitles != other.useExtraTitles) {
-            System.out.println("different extratitle 1");
             return false;
         }
         return true;
