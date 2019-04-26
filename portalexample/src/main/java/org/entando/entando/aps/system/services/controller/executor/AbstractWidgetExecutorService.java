@@ -49,6 +49,8 @@ import com.agiletec.aps.tags.util.IFrameDecoratorContainer;
 import com.agiletec.aps.util.ApsWebApplicationUtils;
 
 import freemarker.template.Template;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.IntStream;
 
 /**
  * @author E.Santoboni
@@ -59,17 +61,27 @@ public abstract class AbstractWidgetExecutorService {
 
     protected void buildWidgetsOutput(RequestContext reqCtx, IPage page, String[] widgetOutput) throws ApsSystemException {
         try {
+            System.out.println("********************* PAGE " + page.getCode() + " *********************");
             List<IFrameDecoratorContainer> decorators = this.extractDecorators(reqCtx);
             Widget[] widgets = page.getWidgets();
-            System.out.println("********************* PAGE " + page.getCode() + " *********************");
-            for (int frame = 0; frame < widgets.length; frame++) {
-                long startTime = System.currentTimeMillis();
-                reqCtx.addExtraParam(SystemConstants.EXTRAPAR_CURRENT_FRAME, new Integer(frame));
-                Widget widget = widgets[frame];
-                String widgetCode = (null != widget && null != widget.getType()) ? widget.getType().getCode() : "*NULL*";
-                widgetOutput[frame] = this.buildWidgetOutput(reqCtx, widget, decorators);
-                System.out.println("Pos " + frame + " - Widget " + widgetCode + " - Time " + (System.currentTimeMillis() - startTime));
-            }
+            ConcurrentHashMap<Integer, String> outputs = new ConcurrentHashMap<>();
+            IntStream.range(0, (widgets.length - 1)).parallel().forEach(frame -> {
+                try {
+                    long startTime = System.currentTimeMillis();
+                    reqCtx.addExtraParam(SystemConstants.EXTRAPAR_CURRENT_FRAME, new Integer(frame));
+                    Widget widget = widgets[frame];
+                    String widgetCode = (null != widget && null != widget.getType()) ? widget.getType().getCode() : "*NULL*";
+                    String output = this.buildWidgetOutput(reqCtx, widget, decorators);
+                    if (!StringUtils.isBlank(output)) {
+                        outputs.put(frame, output);
+                    }
+                    System.out.println("Pos " + frame + " - Widget " + widgetCode + " - Time " + (System.currentTimeMillis() - startTime));
+                } catch (Exception e) {
+                    String msg = "Error detected during widget preprocessing - index " + frame;
+                    _logger.error(msg, e);
+                }
+            });
+            outputs.keySet().stream().forEach(index -> widgetOutput[index] = outputs.get(index));
             System.out.println("***********************************************************************");
         } catch (Throwable t) {
             String msg = "Error detected during widget preprocessing";
