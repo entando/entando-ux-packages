@@ -249,9 +249,11 @@ public class PageMetadata implements Cloneable, Serializable {
      */
     public boolean hasEqualConfiguration(Object obj) {
         if (obj == null) {
+            System.out.println("null object");
             return false;
         }
         if (this.getClass().equals(obj.getClass())) {
+            System.out.println("different metadata classes");
             return false;
         }
         PageMetadata other = (PageMetadata) obj;
