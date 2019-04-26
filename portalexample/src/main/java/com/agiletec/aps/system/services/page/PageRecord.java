@@ -48,10 +48,12 @@ public class PageRecord {
         if (onlineMeta != null) {
             PageMetadata draftMeta = this.getMetadataDraft();
             if (draftMeta != null) {
+                System.out.println("-------------------- page comparator -> " + this.getCode());
                 boolean widgetEquals = true;
                 for (int i = 0; i < this.getWidgetsDraft().length; i++) {
                     Widget widgetDraft = this.getWidgetsDraft()[i];
                     if (this.getWidgetsOnline().length < i) {
+                        System.out.println("widget length different -> pos " + i);
                         widgetEquals = false;
                         break;
                     }
@@ -61,9 +63,11 @@ public class PageRecord {
                     }
                     if ((null != widgetOnline && null == widgetDraft) || (null == widgetOnline && null != widgetDraft)) {
                         widgetEquals = false;
+                        System.out.println("some wiget null -> pos " + i);
                         break;
                     }
                     if (!widgetOnline.getType().getCode().equals(widgetDraft.getType().getCode())) {
+                        System.out.println("different widget type -> pos " + i);
                         widgetEquals = false;
                     }
                     // !widgetOnline.getConfig().equals(widgetDraft.getConfig()
@@ -72,14 +76,21 @@ public class PageRecord {
                     }
                     if ((null != widgetOnline.getConfig() && null == widgetDraft.getConfig())
                             || (null == widgetOnline.getConfig() && null != widgetDraft.getConfig())) {
+                        System.out.println("different widget config (null) -> pos " + i);
                         widgetEquals = false;
                         break;
                     }
                     if (!widgetOnline.getConfig().equals(widgetDraft.getConfig())) {
                         widgetEquals = false;
+                        System.out.println("different widget config -> pos " + i);
+                        break;
                     }
                 }
                 boolean metaEquals = this.getMetadataOnline().hasEqualConfiguration(this.getMetadataDraft());
+                if (!metaEquals) {
+                    System.out.println("different meta config ");
+                }
+                System.out.println("-------------------------------------------");
                 return !(widgetEquals && metaEquals);
             } else {
                 changed = true;
