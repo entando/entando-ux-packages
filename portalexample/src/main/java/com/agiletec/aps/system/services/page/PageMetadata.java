@@ -251,7 +251,7 @@ public class PageMetadata implements Cloneable, Serializable {
         if (obj == null) {
             return false;
         }
-        if (this.getClass().getName().equals(obj.getClass().getName())) {
+        if (!this.getClass().getName().equals(obj.getClass().getName())) {
             return false;
         }
         PageMetadata other = (PageMetadata) obj;
