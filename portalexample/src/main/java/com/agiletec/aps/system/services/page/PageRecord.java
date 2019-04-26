@@ -81,7 +81,7 @@ public class PageRecord {
                         break;
                     }
                 }
-                boolean metaEquals = this.getMetadataOnline().hasEqualConfiguration(this.getMetadataDraft());
+                boolean metaEquals = onlineMeta.hasEqualConfiguration(draftMeta);
                 if (!metaEquals) {
                     System.out.println("different meta config ");
                 }
