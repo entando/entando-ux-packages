@@ -13,6 +13,7 @@
  */
 package org.entando.entando.aps.system.services.controller.executor;
 
+import com.agiletec.aps.ApsThreadLocal;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -66,6 +67,7 @@ public abstract class AbstractWidgetExecutorService {
             Widget[] widgets = page.getWidgets();
             ConcurrentHashMap<Integer, String> outputs = new ConcurrentHashMap<>();
             IntStream.range(0, (widgets.length - 1)).parallel().forEach(frame -> {
+                //ApsThreadLocal.init();
                 try {
                     long startTime = System.currentTimeMillis();
                     reqCtx.addExtraParam(SystemConstants.EXTRAPAR_CURRENT_FRAME, new Integer(frame));
@@ -80,6 +82,7 @@ public abstract class AbstractWidgetExecutorService {
                     String msg = "Error detected during widget preprocessing - index " + frame;
                     _logger.error(msg, e);
                 }
+                //ApsThreadLocal.destroy();
             });
             outputs.keySet().stream().forEach(index -> widgetOutput[index] = outputs.get(index));
             System.out.println("***********************************************************************");
